@@ -1,5 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { interval } from 'rxjs';
 import { HomeComponent } from './components/home/home.component';
 import { TextComponent } from './components/text/text.component';
@@ -11,11 +11,11 @@ import { DynamicComponentDirective } from './directives/dynamic-component.direct
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(DynamicComponentDirective) dynamic !: DynamicComponentDirective;
+  /*@ViewChild(DynamicComponentDirective) dynamic !: DynamicComponentDirective;
   idx = 0;
   ngAfterViewInit():void{
     this.generateComponent();
-    interval(3000).subscribe(() : void => this.generateComponent());
+    //interval(3000).subscribe(() : void => this.generateComponent());
   }
   generateComponent():void{
     const viewContainerRef = this.dynamic.viewContainerRef;
@@ -24,9 +24,9 @@ export class AppComponent {
     const componentRef = viewContainerRef.createComponent<BannerData>(BANNERS[this.idx].component);
     componentRef.instance.data = BANNERS[this.idx].data;
     this.idx = this.idx === 0 ? 1 : 0;
-  }
+  }*/
 }
-  //title = 'sound-page';
+  /*//*title = 'sound-page';
   const BANNERS = [
     {
       data: {
@@ -45,5 +45,5 @@ export class AppComponent {
   export interface BannerData{
     data: any;
 
-  }
+  }*/
 

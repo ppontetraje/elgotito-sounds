@@ -1,0 +1,9 @@
+
+<h1>Hola</h1>
+<div class="container">
+    <div *ngFor="let item of soundList">
+    <div id="buttonX">
+            <a class="butt" (click)="_sound.playSound(item.soundURL)" >{{item.text}}</a>
+    </div>
+    </div>
+</div>
