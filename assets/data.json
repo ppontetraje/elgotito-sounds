@@ -3,92 +3,7 @@
     "sounds": [
         {
             "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
-            "tag":""
-        },
-        {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
+            "soundURL":"./assets/sounds/RG.mp3",
             "tag":""
         },
         {
@@ -98,17 +13,102 @@
         },
         {
             "text":"Hola",
-            "soundURL":"./../assets/sounds/RG.mp3",
+            "soundURL":"./assets/sounds/RG.mp3",
             "tag":""
         },
         {
             "text":"Hola 2",
-            "soundURL":"../assets/sounds/calla-la-boca.mp3",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
             "tag":""
         },
         {
             "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola 2",
+            "soundURL":"./assets/sounds/calla-la-boca.mp3",
+            "tag":""
+        },
+        {
+            "text":"Hola",
+            "soundURL":"./assets/sounds/RG.mp3",
             "tag":""
         }
     ]
