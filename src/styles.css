@@ -1,4 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; 
+    background: url("./assets/images/goto_nyx_assasyn.jpg")  no-repeat center center fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-image: linear-gradient(to left bottom, #00754b, #358d68, #57a685, #78bfa3, #9ad9c1, #a1dcc6, #a9e0cc, #b0e3d1, #9ed0bf, #8cbead, #7bac9c, #6a9a8b);
+*/
+}

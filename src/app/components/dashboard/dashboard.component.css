@@ -1,111 +1,145 @@
-.grid-container {
-  margin: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
 }
-
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.sounds__tittle{
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight:  600;
+  font-size: 5em;
+  text-shadow: -1px -1px white, 1px 1px #333;
+  color:#092337;
 }
-
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+.button__container{
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 45px;
 }
-
-.dashboard-card-content {
-  text-align: center;
+.container__divider{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
-
-
-body {
-  background: #ddd;
-}
-
-#buttonX {
-  width: 100px;
-  height: 100px;  
-  border-bottom: 2px solid #eee;
+.side__container{
+  width: 15%;
+  background-image: url("../../../assets/images/unnamed.jpg");
+  background-size: cover;
   
-  background-image: -webkit-linear-gradient(top, #999, #d0d0d0 80% );
-  background-image: -moz-linear-gradient(top, #999, #d0d0d0 80% );
-  background-image: -ms-linear-gradient(top, #999, #d0d0d0 80% );
-  background-image: -o-linear-gradient(top, #999, #d0d0d0 80% );
-  background-image: linear-gradient(top, #999, #d0d0d0 80% );
+    background-position: center;
   
-  -moz-border-radius: 100px;  
-  -webkit-border-radius: 100px;  
-  border-radius: 100px;
-  
-  box-shadow: inset rgba(0,0,0,0.2) 0px 5px 6px ;
-  
-  left: 50%;
-  top: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-  position: absolute;
 }
-
-.butt {
-  position: absolute;
-  width: 80px;
-  height: 52px;
-  left: 10px;
-  top: 10px;
+.sound__button{
+  display: flex;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: solid 1px transparent;
+  background-color: #9CADBC;
+  justify-content: center;
+  align-items: center;
+}
+.link__sound:before {
+  
+    content: "";
+    display: block;
+    background: #00111C;
+    border-top: 2px solid #9CADBB;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 50px #9CADBB;
+}
+.link__sound{
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #394955, inset 0px 2px 3px #fff;
+  
+  color: 394955;
+}
+.link__sound:hover{
   cursor: pointer;
-  font-family: "Lucida Sans";
-  font-weight: bold;
-  font-size: 23px;
-  color: #888;
-  text-shadow: 0px 1px 0px #fff;
+  
+}
+.link__sound:active {
+  box-shadow: 0px 3px 4px #394955 inset, 0px 2px 6px #fff;
+}
+.text__button{
+  width: 100%;
+  height: 100%;
+  display: flex;
   text-align: center;
-  padding-top: 28px;
+  justify-content: center;
+  align-items: center;
+  color: #394955;
+}
+.text__button:hover{
   
-  -moz-border-radius: 100px;  
-  -webkit-border-radius: 100px;  
-  border-radius: 100px;  
+  color: #000;
+}
+/*asdasdad*/
+
+@media only screen and (max-width: 440px) {
+  .link__sound:before {
+
+    border-top: 2px solid #ddd;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    box-shadow: inset 0px 6px 25px #ddd;
+}
+.sounds__tittle{
+  font-weight:  600;
+  font-size: 3.2em;
   
-  background-image: -webkit-linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100% );
-  background-image: -moz-linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100% );
-  background-image: -ms-linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100% );
-  background-image: -o-linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100% );
-  background-image: linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100% );
-  
-  background-position: 0 6px;
-  background-color: #eee;
-  background-repeat: no-repeat;
-  
-  -webkit-box-shadow: rgba(0,0,0,.4) 0 3px 6px;  
-  -moz-box-shadow: rgba(0,0,0,.4) 0 3px 6px;  
-  box-shadow: rgba(0,0,0,.4) 0 3px 6px;
-  
-  -webkit-transition: all .1s ease-in;
-  -moz-transition: all .1s ease-in;
-  -ms-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  transition: all .1s ease-in;
+}
+  .button__container{
+    width: 90%;
+    gap: 30px;
+  }
+  .sound__button{
+    width: 80px;
+    height: 80px;
+  }
+  .side__container{
+    width: 15%;
+    background-image: url("../../../assets/images/unnamed.jpg");
+    background-size: contain;
+    
+      background-position: center;
+    
+  }
 }
 
-.butt:hover {
-  background-position: 0 0px;
-  
-  -webkit-box-shadow: rgba(0,0,0,.4) 0 3px 8px;  
-  -moz-box-shadow: rgba(0,0,0,.4) 0 3px 8px;  
-  box-shadow: rgba(0,0,0,.4) 0 3px 8px;
+@media only screen and (max-width: 1410px) {
+  .side__container{
+    width: 15%;
+    background-size: contain;
+    
+      background-position: center;
+    
+  }
 }
+@media only screen and (max-width: 260px) {
 
-.butt:active {
-  width: 76px;
-  height: 48px;
-  margin: 2px 0 0 2px;   
-  border-bottom: 1px solid #fff;
-  font-size: 21px;
-  color: #777;
-
-  -webkit-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
-  -moz-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
-  box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
+.sounds__tittle{
+  font-weight:  600;
+  font-size: 2.3em;
+}
 }

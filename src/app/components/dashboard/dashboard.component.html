@@ -1,9 +1,18 @@
 
-<h1>Hola</h1>
+
 <div class="container">
-    <div *ngFor="let item of soundList">
-    <div id="buttonX">
-            <a class="butt" (click)="_sound.playSound(item.soundURL)" >{{item.text}}</a>
+    <h1 class="sounds__tittle">
+        EL GOTITO SOUNDS
+    </h1>
+    <div class="container__divider">
+        <div class="side__container"></div>
+        <div class="button__container">
+        <div class="sound__button" *ngFor="let item of soundList">
+            <a class="link__sound" (click)="_sound.playSound(item.soundURL)" >
+                <span class="text__button">{{item.text}}</span>
+            </a>
+        </div>
     </div>
+    <div class="side__container"></div>
     </div>
 </div>

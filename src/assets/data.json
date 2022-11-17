@@ -2,13 +2,28 @@
     "title": "El Gotito",
     "sounds": [
         {
-            "text":"Hola",
-            "soundURL":"../../assets/sounds/RG.mp3",
+            "text":"Si papa",
+            "soundURL":"./assets/sounds/si_papa.mp3",
             "tag":""
         },
         {
-            "text":"Hola 2",
-            "soundURL":"../../assets/sounds/calla-la-boca.mp3",
+            "text":"el gotito",
+            "soundURL":"./assets/sounds/el_gotito.mp3",
+            "tag":""
+        },
+        {
+            "text":"Buenos días gentita",
+            "soundURL":"./assets/sounds/buenos_dias_gentita.mp3",
+            "tag":""
+        },
+        {
+            "text":"Elano",
+            "soundURL":"./assets/sounds/el_an0.mp3",
+            "tag":""
+        },
+        {
+            "text":"Empala mrd",
+            "soundURL":"./assets/sounds/empala_mrd.mp3",
             "tag":""
         }
     ]
