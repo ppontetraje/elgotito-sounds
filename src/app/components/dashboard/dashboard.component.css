@@ -5,14 +5,32 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding-top: 25px;
 }
 .sounds__tittle{
+  display: flex;
+  height: 60px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight:  600;
   font-size: 5em;
   text-shadow: -1px -1px white, 1px 1px #333;
   color:#092337;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+.network__list{
+  display: flex;
+  gap: 20px;
+  color:#092337;
+ 
+}
+.fab{
+  font-size: 3em;
+  text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);
+}
+.social__network{
+  color:#092337;
+
 }
 .button__container{
   width: 70%;
@@ -20,6 +38,7 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 45px;
+  padding-top: 10px;
 }
 .container__divider{
   width: 100%;
@@ -49,7 +68,7 @@
     content: "";
     display: block;
     background: #00111C;
-    border-top: 2px solid #9CADBB;
+    border-top: 1px solid #9CADBB;
     position: absolute;
     top: -10px;
     left: -10px;
@@ -109,9 +128,13 @@
   font-size: 3.2em;
   
 }
+.fab{
+  font-size: 2em;
+}
   .button__container{
     width: 90%;
     gap: 30px;
+    padding-top: 5px;
   }
   .sound__button{
     width: 80px;

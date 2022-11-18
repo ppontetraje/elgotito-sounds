@@ -1,6 +1,6 @@
 
 html, body { height: 100%; }
-body { margin: 0; 
+body { 
     background: url("./assets/images/goto_nyx_assasyn.jpg")  no-repeat center center fixed;
     background-position: center;
     -webkit-background-size: cover;

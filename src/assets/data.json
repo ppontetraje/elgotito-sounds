@@ -2,12 +2,12 @@
     "title": "El Gotito",
     "sounds": [
         {
-            "text":"Si papa",
+            "text":"Si papá",
             "soundURL":"./assets/sounds/si_papa.mp3",
             "tag":""
         },
         {
-            "text":"el gotito",
+            "text":"El gotito",
             "soundURL":"./assets/sounds/el_gotito.mp3",
             "tag":""
         },
@@ -25,6 +25,127 @@
             "text":"Empala mrd",
             "soundURL":"./assets/sounds/empala_mrd.mp3",
             "tag":""
+        },
+        {
+            "text":"A la mrd",
+            "soundURL":"./assets/sounds/a_la_mrd.mp3",
+            "tag":""
+        },
+        {
+            "text":"Por eso no kchan",
+            "soundURL":"./assets/sounds/por_eso_no_khan.mp3",
+            "tag":""
+        },
+        {
+            "text":"El sorteo",
+            "soundURL":"./assets/sounds/sorteo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Síguelo",
+            "soundURL":"./assets/sounds/siguelo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Que fué!!",
+            "soundURL":"./assets/sounds/que_fue.mp3",
+            "tag":""
+        },
+        {
+            "text":"A la firme",
+            "soundURL":"./assets/sounds/a_la_firme.mp3",
+            "tag":""
+        },
+        {
+            "text":"M0NG0L!",
+            "soundURL":"./assets/sounds/m0ng0l.mp3",
+            "tag":""
+        },
+        {
+            "text":"Solo saben joder",
+            "soundURL":"./assets/sounds/solo_saben_joder.mp3",
+            "tag":""
+        },
+        {
+            "text":"Me da rie",
+            "soundURL":"./assets/sounds/me_da_rie.mp3",
+            "tag":""
+        },
+        {
+            "text":"Toy carriando",
+            "soundURL":"./assets/sounds/toy_carriando.mp3",
+            "tag":""
+        },
+        {
+            "text":"Gotito is back",
+            "soundURL":"./assets/sounds/gotito_isback.mp3",
+            "tag":""
+        },
+        {
+            "text":"Me dan ganas",
+            "soundURL":"./assets/sounds/me_dan_ganas.mp3",
+            "tag":""
+        },
+        {
+            "text":"Te la chupo",
+            "soundURL":"./assets/sounds/te_la_chupo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Estudia",
+            "soundURL":"./assets/sounds/estudia.mp3",
+            "tag":""
+        },
+        {
+            "text":"Qué va a pasar?",
+            "soundURL":"./assets/sounds/que_va_pasar.mp3",
+            "tag":""
+        },
+        {
+            "text":"Así me gusta",
+            "soundURL":"./assets/sounds/asi_me_gusta.mp3",
+            "tag":""
+        },
+        {
+            "text":"Ehhh",
+            "soundURL":"./assets/sounds/ehhh.mp3",
+            "tag":""
+        },
+        {
+            "text":"Yo mismo le pongo",
+            "soundURL":"./assets/sounds/yo_mismo_se_lo_pongo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Han visto?",
+            "soundURL":"./assets/sounds/han_visto.mp3",
+            "tag":""
+        },
+        {
+            "text":"Webonaso",
+            "soundURL":"./assets/sounds/webonaso.mp3",
+            "tag":""
+        },
+        {
+            "text":"Cuanto te mide...",
+            "soundURL":"./assets/sounds/cuanto_te_mide.mp3",
+            "tag":""
+        },
+        {
+            "text":"Te estas ganando un...",
+            "soundURL":"./assets/sounds/te_ganaste_un.mp3",
+            "tag":""
+        },
+        {
+            "text":"Bájame ese tono de voz",
+            "soundURL":"./assets/sounds/bajame_ese_tono.mp3",
+            "tag":""
+        },
+        {
+            "text":"Chúpame...",
+            "soundURL":"./assets/sounds/chupame.mp3",
+            "tag":""
         }
+
     ]
 }
