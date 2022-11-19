@@ -215,6 +215,21 @@
             "text":"Lactala",
             "soundURL":"./assets/sounds/lactala.mp3",
             "tag":""
+        },
+        {
+            "text":"El gotito va...",
+            "soundURL":"./assets/sounds/el_gotito_va.mp3",
+            "tag":""
+        },
+        {
+            "text":"No me trates así",
+            "soundURL":"./assets/sounds/no_me_trates_asi.mp3",
+            "tag":""
+        },
+        {
+            "text":"Dejame en paz",
+            "soundURL":"./assets/sounds/dejame_en_paz.mp3",
+            "tag":""
         }
 
     ]
