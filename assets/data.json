@@ -145,6 +145,76 @@
             "text":"Chúpame...",
             "soundURL":"./assets/sounds/chupame.mp3",
             "tag":""
+        },
+        {
+            "text":"Muah *",
+            "soundURL":"./assets/sounds/muaahh.mp3",
+            "tag":""
+        },
+        {
+            "text":"Ir medio es facil",
+            "soundURL":"./assets/sounds/ir_medi_es_facil.mp3",
+            "tag":""
+        },
+        {
+            "text":"1 vs 1!",
+            "soundURL":"./assets/sounds/correlon_soplon.mp3",
+            "tag":""
+        },
+        {
+            "text":"Correr yo?",
+            "soundURL":"./assets/sounds/correr_yo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Eso, sexo, ...",
+            "soundURL":"./assets/sounds/eso_sexo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Stun mrd!!!",
+            "soundURL":"./assets/sounds/stun_mrd.mp3",
+            "tag":""
+        },
+        {
+            "text":"Esquivado",
+            "soundURL":"./assets/sounds/esquivado.mp3",
+            "tag":""
+        },
+        {
+            "text":"Plin",
+            "soundURL":"./assets/sounds/plin.mp3",
+            "tag":""
+        },
+        {
+            "text":"Sin preservativo",
+            "soundURL":"./assets/sounds/sin_preservativo.mp3",
+            "tag":""
+        },
+        {
+            "text":"Confirma",
+            "soundURL":"./assets/sounds/confirma_lo_confirmado.mp3",
+            "tag":""
+        },
+        {
+            "text":"Sinceridad ante todo",
+            "soundURL":"./assets/sounds/la_sinceridad.mp3",
+            "tag":""
+        },
+        {
+            "text":"Quieres un besito?",
+            "soundURL":"./assets/sounds/quieres_un_besito.mp3",
+            "tag":""
+        },
+        {
+            "text":"Asi es el amor",
+            "soundURL":"./assets/sounds/asi_es_el_amor.mp3",
+            "tag":""
+        },
+        {
+            "text":"Lactala",
+            "soundURL":"./assets/sounds/lactala.mp3",
+            "tag":""
         }
 
     ]
