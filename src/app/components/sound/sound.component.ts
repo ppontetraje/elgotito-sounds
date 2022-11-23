@@ -12,7 +12,6 @@ export class SoundComponent implements OnInit {
     constructor() {}
 
     public getAllSounds(): Sound[] {
-
       return packageInfo.sounds;
     }
     public playSound(path:string){
