@@ -30,7 +30,6 @@
 }
 .social__network{
   color:#092337;
-
 }
 .button__container{
   width: 70%;
@@ -49,9 +48,7 @@
   width: 15%;
   background-image: url("../../../assets/images/unnamed.jpg");
   background-size: cover;
-  
-    background-position: center;
-  
+  background-position: center;
 }
 .sound__button{
   display: flex;
@@ -93,7 +90,6 @@
 }
 .link__sound:hover{
   cursor: pointer;
-  
 }
 .link__sound:active {
   box-shadow: 0px 3px 4px #394955 inset, 0px 2px 6px #fff;
@@ -112,6 +108,10 @@
 .text__button:hover{
   
   color: #000;
+}
+.gotito__fb{
+  background-color: rgba(255, 255, 255);
+
 }
 /*asdasdad*/
 
@@ -171,3 +171,8 @@
   font-size: 2.3em;
 }
 }
+@media only screen and (max-width: 570px) {
+  .gotito__fb{
+    display: none;
+  }
+  }
