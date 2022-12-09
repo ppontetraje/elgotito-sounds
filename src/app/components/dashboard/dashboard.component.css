@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
 .container{
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@
   font-weight:  600;
   font-size: 5em;
   text-shadow: -1px -1px white, 1px 1px #333;
-  color:#092337;
+  color:#1c84d3;
   align-items: center;
   justify-content: center;
   margin:0;
@@ -59,6 +60,17 @@
   background-color: #9CADBC;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.tag__btn{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tag__btn span{
+  color: yellow;
+  text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
+  font-family: 'Oleo Script';
 }
 .link__sound:before {
   
@@ -167,12 +179,14 @@
 @media only screen and (max-width: 260px) {
 
 .sounds__tittle{
-  font-weight:  600;
-  font-size: 2.3em;
+  font-size: 1.5em !important;
 }
 }
 @media only screen and (max-width: 570px) {
   .gotito__fb{
     display: none;
+  }
+  .sounds__tittle{
+    font-size: 2.5em;
   }
   }

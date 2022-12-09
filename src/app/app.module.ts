@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TextComponent } from './components/text/text.component';
@@ -19,6 +18,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { DownloadListComponent } from './components/download-list/download-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { MatMenuModule } from '@angular/material/menu';
     DynamicComponentDirective,
     SoundComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    DownloadListComponent
   ],
   imports: [
     BrowserModule,
