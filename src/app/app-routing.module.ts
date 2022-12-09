@@ -6,7 +6,7 @@ import { DownloadListComponent } from './components/download-list/download-list.
 const routes: Routes = [
   
   { path: '', component: DashboardComponent },
-  {path:'audio', component:DownloadListComponent},
+  {path:'audios', component:DownloadListComponent},
   {path:'**',component:DashboardComponent},
 
 ];

@@ -52,8 +52,148 @@
             "tag":"Top 10"
         },
         {
+            "text":"5 cm",
+            "soundURL":"./assets/sounds/5cm.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"A ver si deswardean",
+            "soundURL":"./assets/sounds/aqui_wardeando.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Asu mare",
+            "soundURL":"./assets/sounds/asu_mare.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Cálmate papi",
+            "soundURL":"./assets/sounds/calmate_papi.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Chapalo",
+            "soundURL":"./assets/sounds/chapalo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Chau gentita",
+            "soundURL":"./assets/sounds/chau_gentita.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Nuevo integrante",
+            "soundURL":"./assets/sounds/el_nuevo_integrante.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Eres muy vulgar",
+            "soundURL":"./assets/sounds/eres_muy_vulgar.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Es simple",
+            "soundURL":"./assets/sounds/es_simple.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Gracias por opinar",
+            "soundURL":"./assets/sounds/gracias_por_opinar.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Hasta el final",
+            "soundURL":"./assets/sounds/hasta_el_final.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Hay talento",
+            "soundURL":"./assets/sounds/hay_talento.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Les voy a contar algo",
+            "soundURL":"./assets/sounds/les_voy_a_contar_algo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No hay forma",
+            "soundURL":"./assets/sounds/no_hay_forma.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No mires atras",
+            "soundURL":"./assets/sounds/no_mires_atras.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No sabes como deseo",
+            "soundURL":"./assets/sounds/no_sabes_como_deseo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No sé como",
+            "soundURL":"./assets/sounds/no_se_como.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No seas pendejo",
+            "soundURL":"./assets/sounds/no_seas_pendejo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Para todos hay",
+            "soundURL":"./assets/sounds/para_todos_hay.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Gotto, Pickeas wbds",
+            "soundURL":"./assets/sounds/pickeas_wbds.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Por mi viejita",
+            "soundURL":"./assets/sounds/por_mi_viejita.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Ptm",
+            "soundURL":"./assets/sounds/ptmr.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Que alguien me diga",
+            "soundURL":"./assets/sounds/que_alguien_me_diga.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Que fué beba",
+            "soundURL":"./assets/sounds/que_fue_beba.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Qué hace jugando rank",
+            "soundURL":"./assets/sounds/que_hace_jugando_rank.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Qué ricas tts",
+            "soundURL":"./assets/sounds/que_ricas_tt.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Soy un heroe",
+            "soundURL":"./assets/sounds/soy_un_heroe.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Te hago un descuento",
+            "soundURL":"./assets/sounds/te_hago_un_descuento.mp3",
+            "tag":"New"
+        },
+        {
             "text":"Elano",
-            "soundURL":"./assets/sounds/el_an0.mp3",
+            "soundURL":"./assets/sounds/soy_elano.mp3",
             "tag":""
         },
         {

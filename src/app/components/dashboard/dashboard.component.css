@@ -47,9 +47,15 @@
 }
 .side__container{
   width: 15%;
-  background-image: url("../../../assets/images/unnamed.jpg");
+  background-image: url("../../../assets/images/el_pelao.jpg");
   background-size: cover;
+  position: relative;
   background-position: center;
+}
+.side__container a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .sound__button{
   display: flex;
@@ -156,11 +162,8 @@
   }
   .side__container{
     width: 15%;
-    background-image: url("../../../assets/images/unnamed.jpg");
     background-size: contain;
-    
-      background-position: center;
-    
+    background-position: center;
   }
   .text__button{
     font-size: 1em;

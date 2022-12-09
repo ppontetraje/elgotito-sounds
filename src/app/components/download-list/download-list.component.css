@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     -webkit-backdrop-filter: blur(50px);
-	backdrop-filter: blur(300px);
+	backdrop-filter: blur(10px);
     border-radius: 18px;
     align-items: center;
 }
