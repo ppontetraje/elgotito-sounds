@@ -1,4 +1,4 @@
-<div class="container">
+<div class="main__container">
   <h1 class="sounds__tittle">EL GOTITO SOUNDS</h1>
   
   <div class="container__divider">
@@ -8,7 +8,8 @@
         <a class="link__sound" (click)="_sound.playSound(item.soundURL)">
           <span class="text__button">{{ item.text }}</span>
         </a>
-        <div class="tag__btn"><span>{{item.tag}}</span></div>
+        <div class="tag__btn" *ngIf="item.tag=='New'; else elseBlock"><span class="top__text">{{item.tag}}</span></div>
+        <ng-template #elseBlock><div class="tag__btn" ><span class="new__text">{{ item.tag }}</span></div></ng-template> 
       </div>
 
     </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
-.container{
+.main__container{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -73,8 +73,13 @@
   left: 0;
   top: 0;
 }
-.tag__btn span{
+.top__text{
   color: yellow;
+  text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
+  font-family: 'Oleo Script';
+}
+.new__text{
+  color: orange;
   text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
   font-family: 'Oleo Script';
 }
@@ -95,6 +100,7 @@
 }
 .link__sound{
   width: 100%;
+  text-decoration: none;
   height: 100%;
   font-weight: 700;
   position: relative;

@@ -201,7 +201,6 @@
             "soundURL":"./assets/sounds/a_la_mrd.mp3",
             "tag":""
         },
-        
         {
             "text":"Síguelo",
             "soundURL":"./assets/sounds/siguelo.mp3",
@@ -265,8 +264,8 @@
             "tag":""
         },
         {
-            "text":"El gotito va...",
-            "soundURL":"./assets/sounds/el_gotito_va.mp3",
+            "text":"El sorteo",
+            "soundURL":"./assets/sounds/sorteo.mp3",
             "tag":""
         },
         {
@@ -333,9 +332,7 @@
             "text":"Stun mrd!!!",
             "soundURL":"./assets/sounds/stun_mrd.mp3",
             "tag":""
-        },
-        
-        
+        },       
         {
             "text":"Sin preservativo",
             "soundURL":"./assets/sounds/sin_preservativo.mp3",
@@ -371,7 +368,6 @@
             "soundURL":"./assets/sounds/lactala.mp3",
             "tag":""
         },
-        
         {
             "text":"No me trates así",
             "soundURL":"./assets/sounds/no_me_trates_asi.mp3",

@@ -6,8 +6,8 @@ import { DownloadListComponent } from './components/download-list/download-list.
 const routes: Routes = [
   
   { path: '', component: DashboardComponent },
-  {path:'audios', component:DownloadListComponent},
-  {path:'**',component:DashboardComponent},
+  {path:'descargar-audios-matthew', component:DownloadListComponent},
+  {path:'**', redirectTo: '', pathMatch: 'full'},
 
 ];
 
