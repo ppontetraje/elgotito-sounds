@@ -1,4 +1,33 @@
-# Gotito Sounds
+# El Gotito Sounds
+
+<h1 align="center">
+  <a name="logo" href="https://ppontetraje.github.io/elgotito-sounds"><img src="https://ppontetraje.github.io/elgotito-sounds/assets/images/el_pelao.jpg" alt="El Gotito Sounds" width="200"></a>
+  <br>
+  El Gotito Sounds Documentation
+</h1>
+<h4 align="center">Asegurate de :star: mi repo para recibir notificaciones de nuevas actualizaciones!</h4>
+
+</div>
+<p><font size="3">
+Este Repo contiene código fuente de la página el gotito sounds. Una página creada con el fin de practicar nuevas habilidades y lecciones aprendidas sobre el framework frontend Angular.
+Espero les guste la página del gran Matthew, el go-ttito.
+</p>
+<div align="center"><a name="menu"></a>
+  <h4>
+    <a href="https://ppontetraje.github.io/elgotito-sounds">
+      Página Web
+    </a>
+    <span> | </span>
+    <a href="https://ppontetraje.github.io/elgotito-sounds/descargar-audios-matthew">
+      Descargar audios de Matthew
+    </a>
+  </h4>
+</div>
+
+![Screenshot de la página el Gotito Sounds](https://ppontetraje.github.io/elgotito-sounds/assets/images/screenshot-main-background.png)
+
+
+## Code Configuration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
