@@ -52,6 +52,11 @@
             "tag":"Top 10"
         },
         {
+            "text":"Pasa mrd",
+            "soundURL":"./assets/sounds/pasa_mrd.mp3",
+            "tag":"New"
+        },
+        {
             "text":"A eso me refería",
             "soundURL":"./assets/sounds/a_eso_me_referia.mp3",
             "tag":"New"
