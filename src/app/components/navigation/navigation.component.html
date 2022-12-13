@@ -1,19 +1,19 @@
 <div class="menu__nav">
   <div class="menu-bar">
-    <a class="nav__list" [routerLink]="['']">El Gotito Sounds</a>
+    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/el_gotito.mp3')" [routerLink]="['']"  >El Gotito Sounds</a>
 
-    <a class="social__network" href="https://www.facebook.com/MatthewDota/" target="_blank">
+    <a class="social__network" (click)="_sound.playSound('./assets/sounds/ehhh.mp3')" href="https://www.facebook.com/MatthewDota/" target="_blank">
       <i class="fab fa-facebook-f"></i>
     </a>
-    <a class="social__network" href="https://twitter.com/MatthewDotaaa" target="_blank">
+    <a class="social__network" (click)="_sound.playSound('./assets/sounds/ehhh.mp3')" href="https://twitter.com/MatthewDotaaa" target="_blank">
       <i class="fab fa-twitter"></i>
     </a>
-    <a class="social__network" href="https://www.youtube.com/@MatthewDota" target="_blank">
+    <a class="social__network" (click)="_sound.playSound('./assets/sounds/ehhh.mp3')" href="https://www.youtube.com/@MatthewDota" target="_blank">
       <i class="fab fa-youtube"></i>
     </a>
-    <a class="social__network" href="https://www.instagram.com/matthewdota/" target="_blank">
+    <a class="social__network" (click)="_sound.playSound('./assets/sounds/ehhh.mp3')" href="https://www.instagram.com/matthewdota/" target="_blank">
       <i class="fab fa-instagram"></i>
     </a>
-    <a class="nav__list" [routerLink]="['descargar-audios-matthew']">Descargar Audios de Matthew</a>
+    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/si_papa.mp3')"  [routerLink]="['descargar-audios-matthew']">Descargar Audios de Matthew</a>
   </div>
 </div>

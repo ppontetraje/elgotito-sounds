@@ -73,15 +73,21 @@
   left: 0;
   top: 0;
 }
-.top__text{
-  color: yellow;
+.tag__btn span{
   text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
   font-family: 'Oleo Script';
 }
 .new__text{
+  color: yellow;
+  
+}
+.top__text{
+  color: rgb(44, 215, 29);
+  
+}
+.hot__text{
   color: orange;
-  text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
-  font-family: 'Oleo Script';
+  
 }
 .link__sound:before {
   

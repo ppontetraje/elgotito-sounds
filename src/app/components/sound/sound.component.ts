@@ -7,6 +7,7 @@ import  packageInfo from '../../../assets/data.json';
   styleUrls: ['./sound.component.css']
 })
 export class SoundComponent implements OnInit {
+  
   ngOnInit(): void {
   }
     constructor() {}
@@ -14,6 +15,7 @@ export class SoundComponent implements OnInit {
     public getAllSounds(): Sound[] {
       return packageInfo.sounds;
     }
+    
     public playSound(path:string){
       let audio = new Audio();
       audio.src = path;
