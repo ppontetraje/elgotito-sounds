@@ -47,12 +47,13 @@
 }
 .side__container{
   width: 15%;
-  background-image: url("../../../assets/images/el_pelao.jpg");
+  /*background-image: url("../../../assets/images/el_pelao.jpg");*/
   background-size: cover;
   position: relative;
   background-position: center;
 }
 .side__container a{
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -196,6 +197,11 @@
 .sounds__tittle{
   font-size: 1.5em !important;
 }
+}
+@media only screen and (max-width: 900px) {
+  .side__container{
+    background-image: url("../../../assets/images/el_pelao.jpg");
+  }
 }
 @media only screen and (max-width: 570px) {
   .gotito__fb{
