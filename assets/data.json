@@ -2,33 +2,33 @@
     "title": "El Gotito",
     "sounds": [
         {
-            "text":"El gotito",
-            "soundURL":"./assets/sounds/el_gotito.mp3",
+            "text":"Una chiki",
+            "soundURL":"./assets/sounds/una_chiki.mp3",
             "tag":"🥇 Top 1"
+        },
+        {
+            "text":"Eso no lo vi venir",
+            "soundURL":"./assets/sounds/no_lo_vi_venir.mp3",
+            "tag":"🥈 Top 2"
+        },
+        {
+            "text":"Preocupante la cancha",
+            "soundURL":"./assets/sounds/preocupante_la_cancha.mp3",
+            "tag":"🥉 Top 3"
+        },
+        {
+            "text":"Pasa mrd",
+            "soundURL":"./assets/sounds/pasa_mrd.mp3",
+            "tag":"Top 4"
         },
         {
             "text":"Si papá",
             "soundURL":"./assets/sounds/si_papa.mp3",
-            "tag":"🥈 Top 2"
-        },
-        {
-            "text":"Dejame en paz",
-            "soundURL":"./assets/sounds/dejame_en_paz.mp3",
-            "tag":"🥉 Top 3"
-        },
-        {
-            "text":"Estudia",
-            "soundURL":"./assets/sounds/estudia.mp3",
-            "tag":"Top 4"
-        },
-        {
-            "text":"Bájame ese tono de voz",
-            "soundURL":"./assets/sounds/bajame_ese_tono.mp3",
             "tag":"Top 5"
         },
         {
-            "text":"Toy carriando",
-            "soundURL":"./assets/sounds/toy_carriando.mp3",
+            "text":"El gotito",
+            "soundURL":"./assets/sounds/el_gotito.mp3",
             "tag":"Top 6"
         },
         {
@@ -37,13 +37,13 @@
             "tag":"Top 7"
         },
         {
-            "text":"Yo mismo le pongo",
-            "soundURL":"./assets/sounds/yo_mismo_se_lo_pongo.mp3",
+            "text":"Dejame en paz",
+            "soundURL":"./assets/sounds/dejame_en_paz.mp3",
             "tag":"Top 8"
         },
         {
-            "text":"Por eso no kchan",
-            "soundURL":"./assets/sounds/por_eso_no_khan.mp3",
+            "text":"Bájame ese tono de voz",
+            "soundURL":"./assets/sounds/bajame_ese_tono.mp3",
             "tag":"Top 9"
         },
         {
@@ -52,329 +52,469 @@
             "tag":"Top 10"
         },
         {
-            "text":"Pasa mrd",
-            "soundURL":"./assets/sounds/pasa_mrd.mp3",
+            "text":"Qué rico!",
+            "soundURL":"./assets/sounds/que_rico.mp3",
             "tag":"New"
         },
         {
-            "text":"A eso me refería",
-            "soundURL":"./assets/sounds/a_eso_me_referia.mp3",
+            "text":"Pasa mrd!!! 🤬",
+            "soundURL":"./assets/sounds/pasa_mrd_lvl.mp3",
             "tag":"New"
+        },
+        {
+            "text":"AEA mongol!",
+            "soundURL":"./assets/sounds/aea_monogl.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Back por favor",
+            "soundURL":"./assets/sounds/back_por_favor.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"El gotito, la soberbia",
+            "soundURL":"./assets/sounds/el_gotito_la_soberbia.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Colabora mrd",
+            "soundURL":"./assets/sounds/colabora_mrd.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"A quién mrd!!! 🤬",
+            "soundURL":"./assets/sounds/a_quien_mrd.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Esta línea es mía",
+            "soundURL":"./assets/sounds/esta_linea_es_mia.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"El gotito llega para salvar el día",
+            "soundURL":"./assets/sounds/el_gotito_llega_para_salvar.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Era una bromita papi",
+            "soundURL":"./assets/sounds/era_una_bromita_papi.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Que muchacho para más talentoso",
+            "soundURL":"./assets/sounds/que_muchacho_para_mas_talentoso.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Mátalo a ese csm",
+            "soundURL":"./assets/sounds/matalo_a_ese_csmr.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No es posible",
+            "soundURL":"./assets/sounds/no_es_posible.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Qué pasa compare?",
+            "soundURL":"./assets/sounds/que_pasa_compare.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Ujujujuy",
+            "soundURL":"./assets/sounds/ujujujuy.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Yo, el gotto",
+            "soundURL":"./assets/sounds/yo_el_goto.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Basuras",
+            "soundURL":"./assets/sounds/basuras.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Dejame en paz gorgojo",
+            "soundURL":"./assets/sounds/dejame_en_paz_ssj.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Ay papi 😏",
+            "soundURL":"./assets/sounds/ay_papi.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Beiteadaso",
+            "soundURL":"./assets/sounds/baiteadaso.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"A ver un masajito?",
+            "soundURL":"./assets/sounds/a_ver_un_masajito.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Quiero un tronchazo",
+            "soundURL":"./assets/sounds/quiero_un_tronchazo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"No soy blanquito",
+            "soundURL":"./assets/sounds/No_soy_blanquito.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Llegó el verdadero carry",
+            "soundURL":"./assets/sounds/llego_el_verdadero_carry.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Oe cállate",
+            "soundURL":"./assets/sounds/oe_callate.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Hablamos papis",
+            "soundURL":"./assets/sounds/hablamos_papis.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Escúpanme",
+            "soundURL":"./assets/sounds/escupanme.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Me he entregado",
+            "soundURL":"./assets/sounds/me_he_entregado.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Estudia",
+            "soundURL":"./assets/sounds/estudia.mp3",
+            "tag":"Hot"
+        },
+        {
+            "text":"Toy carriando",
+            "soundURL":"./assets/sounds/toy_carriando.mp3",
+            "tag":"Hot"
         },
         {
             "text":"Primera mrd",
             "soundURL":"./assets/sounds/primera_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Fuera ctm",
             "soundURL":"./assets/sounds/fuera_ctm.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Llegó la hora",
             "soundURL":"./assets/sounds/hora_de_carriar.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ñieem ñieem",
             "soundURL":"./assets/sounds/nieem_niem.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Habla bien",
             "soundURL":"./assets/sounds/habla_bien.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Papi papi",
             "soundURL":"./assets/sounds/papi_papi.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Por qué gritas gotito?",
             "soundURL":"./assets/sounds/pq_gritas_gotito.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Eso no lo vi venir",
-            "soundURL":"./assets/sounds/no_lo_vi_venir.mp3",
-            "tag":"New"
+            "text":"Yo mismo le pongo",
+            "soundURL":"./assets/sounds/yo_mismo_se_lo_pongo.mp3",
+            "tag":"Hot"
         },
         {
             "text":"ayayayay ♪♫",
             "soundURL":"./assets/sounds/ayayayayay.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ven colabora",
             "soundURL":"./assets/sounds/ven_colabora.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ya les he explicado",
             "soundURL":"./assets/sounds/ya_les_he_explicado.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Busco activo",
             "soundURL":"./assets/sounds/busco_activo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Busco Pasivo",
             "soundURL":"./assets/sounds/busco_pasivo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Chapa chapa!!",
             "soundURL":"./assets/sounds/roba_las_zapatillas.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Qué es el dota?",
             "soundURL":"./assets/sounds/que_es_el_dota.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"aaaaaay",
             "soundURL":"./assets/sounds/aaay.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Ulti de Oracle",
+            "text":"A ti te dicen ulti del Oracle",
             "soundURL":"./assets/sounds/ulti_de_oracle.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Baneado mrd",
             "soundURL":"./assets/sounds/toma_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"El problema no es el parche",
             "soundURL":"./assets/sounds/el_problema_es.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Yo confio",
             "soundURL":"./assets/sounds/yo_confio.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Cuando te vea",
             "soundURL":"./assets/sounds/cuando_te_vea.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Tan soltero",
             "soundURL":"./assets/sounds/tan_soltero.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Dr. Gotito",
             "soundURL":"./assets/sounds/Dr_Gotito.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
 
         {
             "text":"Dejenme en paaaz!!",
             "soundURL":"./assets/sounds/dejenme_en_paz.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ese es mi equipo",
             "soundURL":"./assets/sounds/ese_es_mi_equipo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Mi momento ha llegado",
             "soundURL":"./assets/sounds/mi_momento_ha_llegado.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Miralo",
+            "text":"Míralo",
             "soundURL":"./assets/sounds/miralo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Nooooo!!",
             "soundURL":"./assets/sounds/nooo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Número equivocado",
             "soundURL":"./assets/sounds/numero_equivocado.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Preocupante la cancha",
-            "soundURL":"./assets/sounds/preocupante_la_cancha.mp3",
-            "tag":"New"
+            "text":"Por eso no kchan",
+            "soundURL":"./assets/sounds/por_eso_no_khan.mp3",
+            "tag":"Hot"
         },
         {
             "text":"Que me lo rompan bien.",
             "soundURL":"./assets/sounds/que_me_lo_rompan_bien.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Rotala ps",
             "soundURL":"./assets/sounds/rotala_ps.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Tranquilo Harry",
             "soundURL":"./assets/sounds/tranquilo_harry.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Una chiki",
-            "soundURL":"./assets/sounds/una_chiki.mp3",
-            "tag":"New"
+            "text":"A eso me refería",
+            "soundURL":"./assets/sounds/a_eso_me_referia.mp3",
+            "tag":"Hot"
         },
  
         {
             "text":"Por mi viejita",
             "soundURL":"./assets/sounds/por_mi_viejita.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Que fué beba",
             "soundURL":"./assets/sounds/que_fue_beba.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"A ver si deswardean",
             "soundURL":"./assets/sounds/aqui_wardeando.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         
         {
             "text":"Cálmate papi",
             "soundURL":"./assets/sounds/calmate_papi.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Chapalo",
             "soundURL":"./assets/sounds/chapalo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Chau gentita",
             "soundURL":"./assets/sounds/chau_gentita.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"No mires atras",
             "soundURL":"./assets/sounds/no_mires_atras.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Nuevo integrante",
             "soundURL":"./assets/sounds/el_nuevo_integrante.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Eres muy vulgar",
             "soundURL":"./assets/sounds/eres_muy_vulgar.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Es simple",
             "soundURL":"./assets/sounds/es_simple.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Buenos días gentita",
             "soundURL":"./assets/sounds/buenos_dias_gentita.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Hasta el final",
             "soundURL":"./assets/sounds/hasta_el_final.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Asu mare",
             "soundURL":"./assets/sounds/asu_mare.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Hay talento",
             "soundURL":"./assets/sounds/hay_talento.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Les voy a contar algo",
             "soundURL":"./assets/sounds/les_voy_a_contar_algo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"No hay forma",
             "soundURL":"./assets/sounds/no_hay_forma.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         
         {
             "text":"No sabes como deseo",
             "soundURL":"./assets/sounds/no_sabes_como_deseo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"No sé como",
             "soundURL":"./assets/sounds/no_se_como.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"No seas pendejo",
             "soundURL":"./assets/sounds/no_seas_pendejo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Para todos hay",
             "soundURL":"./assets/sounds/para_todos_hay.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Gotto, Pickeas wbds",
             "soundURL":"./assets/sounds/pickeas_wbds.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Ptm",
             "soundURL":"./assets/sounds/ptmr.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Que alguien me diga",
             "soundURL":"./assets/sounds/que_alguien_me_diga.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         
         {
             "text":"Qué hace jugando rank",
             "soundURL":"./assets/sounds/que_hace_jugando_rank.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Qué ricas tts",
             "soundURL":"./assets/sounds/que_ricas_tt.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Soy un heroe",
             "soundURL":"./assets/sounds/soy_un_heroe.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Te hago un descuento",
             "soundURL":"./assets/sounds/te_hago_un_descuento.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"5 cm",
             "soundURL":"./assets/sounds/5cm.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Elano",
