@@ -192,6 +192,46 @@
             "tag":"New"
         },
         {
+            "text":"A mi me pagan en sacreds",
+            "soundURL":"./assets/sounds/a_mi_me_pagan_en_sacreds.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Mi cachero era John Cena y Rey Misterio",
+            "soundURL":"./assets/sounds/john_cena_y_rey_misterio.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"La fé es lo más lindo de la vida",
+            "soundURL":"./assets/sounds/la_fe.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Llegó la caballería",
+            "soundURL":"./assets/sounds/llego_la-caballeria.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Los off más gozus juegan timber",
+            "soundURL":"./assets/sounds/los_off_mas_gozus.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Por qué son tan mancos!",
+            "soundURL":"./assets/sounds/por_que_son_tan_mancos.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Yo defiendo muchachos",
+            "soundURL":"./assets/sounds/yo_defiendo_muchachos.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Son cosas de la vida",
+            "soundURL":"./assets/sounds/son_cosas_de_la_vida.mp3",
+            "tag":"New"
+        },
+        {
             "text":"Estudia",
             "soundURL":"./assets/sounds/estudia.mp3",
             "tag":"Hot"
