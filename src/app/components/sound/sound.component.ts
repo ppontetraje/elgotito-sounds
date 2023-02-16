@@ -8,18 +8,28 @@ import  packageInfo from '../../../assets/data.json';
 })
 export class SoundComponent implements OnInit {
   
+  audio:any;
+  
   ngOnInit(): void {
+    
   }
-    constructor() {}
+    constructor() {
+      
+    }
 
     public getAllSounds(): Sound[] {
       return packageInfo.sounds;
     }
     
     public playSound(path:string){
-      let audio = new Audio();
-      audio.src = path;
-      audio.load();
-      audio.play();
+      if(this.audio){
+        /*console.log(path);*/
+        this.audio.pause();
+      }
+      this.audio = new Audio();
+      this.audio.src = path;
+      this.audio.load();
+      this.audio.play();
     }
+
 }

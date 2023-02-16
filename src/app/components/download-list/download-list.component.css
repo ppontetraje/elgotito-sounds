@@ -8,14 +8,14 @@
     font-family: 'Bebas Neue', sans-serif;
     font-weight:  600;
     font-size: 5em;
-    color: #1c84d3;
-    text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);
+    color: white;
+    /*text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);*/
     margin:0;
 }
 
 .link__sound{
  text-decoration: none;
- color: aliceblue;
+ color: rgb(255, 255, 255);
 }
 
 .list__container{
@@ -29,8 +29,8 @@
     width: 25%;
     display: flex;
     justify-content: space-between;
-    -webkit-backdrop-filter: blur(50px);
-	backdrop-filter: blur(10px);
+    /*-webkit-backdrop-filter: blur(50px);
+	backdrop-filter: blur(10px);*/
     border-radius: 18px;
     align-items: center;
 }
@@ -42,18 +42,18 @@ cursor: default;
     margin-right: 10px;
     }
 .gotito__fb{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     margin-top: 15px;
 }
 .text__button{
-    color: #acb4b9;
+    color: #ffffff;
     font-family: 'Bebas Neue', sans-serif;
     
     font-size: 1.5em;
     text-shadow: -0.5px -0.5px rgb(245, 245, 245), 1px 1px rgb(49, 49, 49);
 }
 .fa-arrow-alt-circle-down{
- color: #1c84d3;
+ color: #5de195;
  font-size: 1.5em;
 }
 
