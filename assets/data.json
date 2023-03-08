@@ -52,6 +52,51 @@
             "tag":"Top 10"
         },
         {
+            "text":"Me enquispeces",
+            "soundURL":"./assets/sounds/me_enquispeces.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"La pvta fama",
+            "soundURL":"./assets/sounds/la_pvta_fama.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Una chiki, una chiki...",
+            "soundURL":"./assets/sounds/una_chiki_una_chiki.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Salimos mrd!",
+            "soundURL":"./assets/sounds/salimos_mrd.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Nooo no no",
+            "soundURL":"./assets/sounds/nooo_no_no.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Lo que les enseño a mis chibolos",
+            "soundURL":"./assets/sounds/lo_que_les_ensenho.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Las kills me llueven",
+            "soundURL":"./assets/sounds/kills_me_llueven.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Demasiado Facil",
+            "soundURL":"./assets/sounds/demasiado_facil.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"A desestresarse con mis viewers",
+            "soundURL":"./assets/sounds/a_desestrezarce.mp3",
+            "tag":"New"
+        },
+        {
             "text":"Qué rico!",
             "soundURL":"./assets/sounds/que_rico.mp3",
             "tag":"New"
