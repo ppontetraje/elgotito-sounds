@@ -50,8 +50,19 @@
   background-image: url("../../../assets/images/el_gotito_pelao.jpg");
   /*background-size: cover;*/
   position: relative;
-  background-position: center;
-}
+  background-position: top;
+  background-size: contain;
+}/*
+.mobile__picture{
+	height: 10%x;
+	background-image: url("../../../assets/images/el_gotito_pelao.jpg");
+	background-size: cover;
+  
+	background-size: contain;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+  }*/
 .side__container a{
   /*display: none;*/
   position: absolute;
@@ -200,7 +211,7 @@
 }
 @media only screen and (max-width: 900px) {
   .side__container{
-    background-image: url("../../../assets/images/el_pelao.jpg");
+    background-image: url("../../../assets/images/el_gotito_pelao.jpg");
   }
 }
 @media only screen and (max-width: 570px) {
