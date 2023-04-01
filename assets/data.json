@@ -47,470 +47,550 @@
             "tag":"Top 9"
         },
         {
-            "text":"Gracias por opinar",
-            "soundURL":"./assets/sounds/gracias_por_opinar.mp3",
+            "text":"Yo defiendo muchachos",
+            "soundURL":"./assets/sounds/yo_defiendo_muchachos.mp3",
             "tag":"Top 10"
         },
         {
+            "text":"Me la chupo solo",
+            "soundURL":"./assets/sounds/me_la_chupo_solo.mp3",
+            "tag":"New"
+        },
+        {
+            "text":"Hay talento, falta pelo",
+            "soundURL":"./assets/sounds/hay_talento.mp3",
+            "tag":"New"
+        },
+        {"text":"Toy jovencito","soundURL":"./assets/sounds/toy_jovencito.mp3","tag":"New"},        
+        {"text":"La gente en mi stream","soundURL":"./assets/sounds/la_gente_De_mi_stream.mp3","tag":"New"},
+        {"text":"Ay me fui ","soundURL":"./assets/sounds/ay_me_fui.mp3","tag":"New"},
+        {"text":"Puedes imaginar eso?","soundURL":"./assets/sounds/puedes_imaginar_eso.mp3","tag":"New"},
+        {"text":"Dejen de matarme","soundURL":"./assets/sounds/dejen_de_matarmet.mp3","tag":"New"},
+        {"text":"Ahora que chucha hacemos?","soundURL":"./assets/sounds/ahora_que_hacemos.mp3","tag":"New"},
+        {"text":"Alucina brother","soundURL":"./assets/sounds/alucina_hoy_me_fui_a_la_playa.mp3","tag":"New"},
+        {"text":"Toy asado porque Beastcost no gana","soundURL":"./assets/sounds/toy_asado_pq_BC_no_gana.mp3","tag":"New"},
+        {"text":"Son cositas","soundURL":"./assets/sounds/son_cositas.mp3","tag":"New"},
+        {"text":"A ver si me atrapa","soundURL":"./assets/sounds/a_ver_si_me_atrapa.mp3","tag":"New"},
+        {"text":"Chapalooo","soundURL":"./assets/sounds/chapa_csmr.mp3","tag":"New"},
+        {"text":"Claro ps bateria","soundURL":"./assets/sounds/claro_ps_bateria.mp3","tag":"New"},
+        {"text":"Cuando estoy con mi tío","soundURL":"./assets/sounds/cuando_estoy_con_mi_tio.mp3","tag":"New"},
+        {"text":"Cuidado con lo que dices","soundURL":"./assets/sounds/cuidado_con_lo_que_dices.mp3","tag":"New"},
+        {"text":"Gotito tu te diviertes jugando dota?","soundURL":"./assets/sounds/diviertete_gotito.mp3","tag":"New"},
+        {"text":"Goto tengo 40 años y no kcho","soundURL":"./assets/sounds/goto_tengo_40_Anios.mp3","tag":"New"},
+        {"text":"No por favor","soundURL":"./assets/sounds/no_porfavor.mp3","tag":"New"},
+        {"text":"Mi king color kong","soundURL":"./assets/sounds/mi_king.mp3","tag":"New"},
+        {"text":"Yo los entiendo papis","soundURL":"./assets/sounds/yo_los_entiendo_papis.mp3","tag":"New"},
+
+        {"text":"Dejame ser","soundURL":"./assets/sounds/dejame_Ser.mp3","tag":"New"},
+        {"text":"Abre la boca","soundURL":"./assets/sounds/abre_la_boca.mp3","tag":"New"},
+        {"text":"De nada muchachos","soundURL":"./assets/sounds/de_nada_muchachos.mp3","tag":"New"},
+        {"text":"Oe What?","soundURL":"./assets/sounds/oe_what.mp3","tag":"New"},
+        {"text":"Que fué loco?","soundURL":"./assets/sounds/que_fue_loco.mp3","tag":"New"},
+
+        {"text":"Onichan","soundURL":"./assets/sounds/onichan.mp3","tag":"New"},
+        {"text":"El dígito de mi stream","soundURL":"./assets/sounds/el_digito_de_mi_stream.mp3","tag":"New"},
+
+
+        {"text":"Este on es malcriado","soundURL":"./assets/sounds/esteon_es_malcriado.mp3","tag":"New"},
+        {"text":"Este dota me hace perder la fé","soundURL":"./assets/sounds/este_dota_me_hace_perder_la_fe.mp3","tag":"New"},
+        {"text":"Este sí se huevió de barrio","soundURL":"./assets/sounds/este_se_equivoco_de_barrio.mp3","tag":"New"},
+        {"text":"Qué habilidoso este muchacho","soundURL":"./assets/sounds/que_habilidoso_el_muchacho.mp3","tag":"New"},
+
+        {"text":"La concha de la lora","soundURL":"./assets/sounds/la_concha_la_lora.mp3","tag":"New"},
+        {"text":"La felicidad fluye en mis venas","soundURL":"./assets/sounds/la_felicidad_fluye_en_mis_venas.mp3","tag":"New"},
+        {"text":"Si piensas que Darkmago es un cpp","soundURL":"./assets/sounds/si_piensas_que_darkmago_escpp.mp3","tag":"New"},
+
+        {"text":"Les meto un combo","soundURL":"./assets/sounds/les_meto_un_combo.mp3","tag":"New"},
+        {"text":"Mejor ni les cuento","soundURL":"./assets/sounds/mejor_ni_les_cuento.mp3","tag":"New"},
+       
+      
+        {"text":"No murió","soundURL":"./assets/sounds/no_murio.mp3","tag":"New"},
+        
+        {"text":"La nueva promesa","soundURL":"./assets/sounds/nueva_promesa.mp3","tag":"New"},
+        
+       
+        {"text":"Orgullo oxapampino","soundURL":"./assets/sounds/orgullo_oxapampino.mp3","tag":"New"},
+        {"text":"Prosor prosor","soundURL":"./assets/sounds/prosor_prosor_322.mp3","tag":"New"},
+        
+        
+       
+        {"text":"Que lico","soundURL":"./assets/sounds/que_lico.mp3","tag":"New"},
+        {"text":"Se acabó el sueño americano","soundURL":"./assets/sounds/se_acabo_el_suenio.mp3","tag":"New"},
+        {"text":"Siempre lo supe","soundURL":"./assets/sounds/siempre_lo_supe.mp3","tag":"New"},
+        
+        
+        {"text":"Ta calculado papi","soundURL":"./assets/sounds/ta_calculado_papi.mp3","tag":"New"},
+        {"text":"Ta picantísimo","soundURL":"./assets/sounds/ta_picantisimo.mp3","tag":"New"},
+        {"text":"Termina mrd","soundURL":"./assets/sounds/termina_mrd.mp3","tag":"New"},
+        {"text":"Te quiero cachar","soundURL":"./assets/sounds/te_quiero_cachar.mp3","tag":"New"},
+        {"text":"Te voy a romper el ogt","soundURL":"./assets/sounds/te_voy_a_romper_elogt.mp3","tag":"New"},
+       
+        {"text":"Ultea aunque sea","soundURL":"./assets/sounds/ultea_aunque_sea.mp3","tag":"New"},
+        {"text":"Uno de esos torneos vamos a ganar","soundURL":"./assets/sounds/uno_de_esos_torneos_vamos_aganar.mp3","tag":"New"},
+        {"text":"Un besito puede ser?","soundURL":"./assets/sounds/un_besito_puede_ser.mp3","tag":"New"},
+        {"text":"Ya llegó la mas 🐩 ","soundURL":"./assets/sounds/ya_llego_la_mas.mp3","tag":"New"},
+        {"text":"Yo, en tu cara y ¿Qué chucha hiciste?","soundURL":"./assets/sounds/yo_en_tu_cara_y_que_hiciste.mp3","tag":"New"},
+        
+        {
             "text":"Me enquispeces",
             "soundURL":"./assets/sounds/me_enquispeces.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"La pvta fama",
             "soundURL":"./assets/sounds/la_pvta_fama.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Una chiki, una chiki...",
             "soundURL":"./assets/sounds/una_chiki_una_chiki.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Salimos mrd!",
             "soundURL":"./assets/sounds/salimos_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Nooo no no",
             "soundURL":"./assets/sounds/nooo_no_no.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Lo que les enseño a mis chibolos",
             "soundURL":"./assets/sounds/lo_que_les_ensenho.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Las kills me llueven",
             "soundURL":"./assets/sounds/kills_me_llueven.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Demasiado Facil",
             "soundURL":"./assets/sounds/demasiado_facil.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"A desestresarse con mis viewers",
             "soundURL":"./assets/sounds/a_desestrezarce.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Qué rico!",
             "soundURL":"./assets/sounds/que_rico.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Pasa mrd!!! 🤬",
             "soundURL":"./assets/sounds/pasa_mrd_lvl.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"AEA mongol!",
             "soundURL":"./assets/sounds/aea_monogl.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Esa es mi chamba",
             "soundURL":"./assets/sounds/esa_es_mi_chamba.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Back por favor",
             "soundURL":"./assets/sounds/back_por_favor.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"El gotito, la soberbia",
             "soundURL":"./assets/sounds/el_gotito_la_soberbia.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Colabora mrd",
             "soundURL":"./assets/sounds/colabora_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"A quién mrd!!! 🤬",
             "soundURL":"./assets/sounds/a_quien_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Esta línea es mía",
             "soundURL":"./assets/sounds/esta_linea_es_mia.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"El gotito llega para salvar el día",
             "soundURL":"./assets/sounds/el_gotito_llega_para_salvar.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Era una bromita papi",
             "soundURL":"./assets/sounds/era_una_bromita_papi.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Que muchacho para más talentoso",
             "soundURL":"./assets/sounds/que_muchacho_para_mas_talentoso.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Mátalo a ese csm",
             "soundURL":"./assets/sounds/matalo_a_ese_csmr.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"No es posible",
             "soundURL":"./assets/sounds/no_es_posible.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Qué pasa compare?",
             "soundURL":"./assets/sounds/que_pasa_compare.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ujujujuy",
             "soundURL":"./assets/sounds/ujujujuy.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Yo, el gotto",
             "soundURL":"./assets/sounds/yo_el_goto.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Basuras",
             "soundURL":"./assets/sounds/basuras.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Dejame en paz gorgojo",
             "soundURL":"./assets/sounds/dejame_en_paz_ssj.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ay papi 😏",
             "soundURL":"./assets/sounds/ay_papi.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Baiteadaso",
             "soundURL":"./assets/sounds/baiteadaso.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"A ver un masajito?",
             "soundURL":"./assets/sounds/a_ver_un_masajito.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Quiero un tronchazo",
             "soundURL":"./assets/sounds/quiero_un_tronchazo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"No soy blanquito",
             "soundURL":"./assets/sounds/No_soy_blanquito.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Llegó el verdadero carry",
             "soundURL":"./assets/sounds/llego_el_verdadero_carry.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Oe cállate",
             "soundURL":"./assets/sounds/oe_callate.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Hablamos papis",
             "soundURL":"./assets/sounds/hablamos_papis.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Escúpanme",
             "soundURL":"./assets/sounds/escupanme.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Me he entregado",
             "soundURL":"./assets/sounds/me_he_entregado.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"A mi me pagan en sacreds",
             "soundURL":"./assets/sounds/a_mi_me_pagan_en_sacreds.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Mi cachero era John Cena y Rey Misterio",
             "soundURL":"./assets/sounds/john_cena_y_rey_misterio.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
-            "text":"Yo defiendo muchachos",
-            "soundURL":"./assets/sounds/yo_defiendo_muchachos.mp3",
-            "tag":"New"
+            "text":"Gracias por opinar",
+            "soundURL":"./assets/sounds/gracias_por_opinar.mp3",
+            "tag":"Hot"
         },
         {
             "text":"Son cosas de la vida",
             "soundURL":"./assets/sounds/son_cosas_de_la_vida.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"A la base mrd!",
             "soundURL":"./assets/sounds/a_la_base_mrd.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"La fé es lo más lindo de la vida",
             "soundURL":"./assets/sounds/la_fe.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Llegó la caballería",
             "soundURL":"./assets/sounds/llego_la-caballeria.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Los off más gozus juegan timber",
             "soundURL":"./assets/sounds/los_off_mas_gozus.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Por qué son tan mancos!",
             "soundURL":"./assets/sounds/por_que_son_tan_mancos.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },        
         {
             "text":"Ahora?",
             "soundURL":"./assets/sounds/ahora.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Anotadazo",
             "soundURL":"./assets/sounds/anotadazo.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Donde quiere su masajito?",
             "soundURL":"./assets/sounds/donde_quiere_su_masajito.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"La fé es lo último que se pierde",
             "soundURL":"./assets/sounds/la_fe_es_lo_ultimo_que_se_pierde.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Me kcharon",
             "soundURL":"./assets/sounds/me_kcharon.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Objetivo cumplido",
             "soundURL":"./assets/sounds/objetivo_cumplido.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Que rico *",
             "soundURL":"./assets/sounds/que_rico2.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Se viene el comeback",
             "soundURL":"./assets/sounds/se_viene_el_comeback.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Ta cargando mi daga",
             "soundURL":"./assets/sounds/ta_cargando_mi_daga.mp3",
-            "tag":"New"
+            "tag":"Hot"
         },
         {
             "text":"Estudia",
             "soundURL":"./assets/sounds/estudia.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Toy carriando",
             "soundURL":"./assets/sounds/toy_carriando.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Primera mrd",
             "soundURL":"./assets/sounds/primera_mrd.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Fuera ctm",
             "soundURL":"./assets/sounds/fuera_ctm.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Llegó la hora",
             "soundURL":"./assets/sounds/hora_de_carriar.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Ñieem ñieem",
             "soundURL":"./assets/sounds/nieem_niem.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Habla bien",
             "soundURL":"./assets/sounds/habla_bien.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Papi papi",
             "soundURL":"./assets/sounds/papi_papi.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Por qué gritas gotito?",
             "soundURL":"./assets/sounds/pq_gritas_gotito.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Yo mismo le pongo",
             "soundURL":"./assets/sounds/yo_mismo_se_lo_pongo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"ayayayay ♪♫",
             "soundURL":"./assets/sounds/ayayayayay.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Ven colabora",
             "soundURL":"./assets/sounds/ven_colabora.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Ya les he explicado",
             "soundURL":"./assets/sounds/ya_les_he_explicado.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Busco activo",
             "soundURL":"./assets/sounds/busco_activo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Busco Pasivo",
             "soundURL":"./assets/sounds/busco_pasivo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Chapa chapa!!",
             "soundURL":"./assets/sounds/roba_las_zapatillas.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Qué es el dota?",
             "soundURL":"./assets/sounds/que_es_el_dota.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"aaaaaay",
             "soundURL":"./assets/sounds/aaay.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"A ti te dicen ulti del Oracle",
             "soundURL":"./assets/sounds/ulti_de_oracle.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Baneado mrd",
             "soundURL":"./assets/sounds/toma_mrd.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"El problema no es el parche",
             "soundURL":"./assets/sounds/el_problema_es.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Yo confio",
             "soundURL":"./assets/sounds/yo_confio.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Cuando te vea",
             "soundURL":"./assets/sounds/cuando_te_vea.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Tan soltero",
             "soundURL":"./assets/sounds/tan_soltero.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Dr. Gotito",
             "soundURL":"./assets/sounds/Dr_Gotito.mp3",
-            "tag":"Hot"
+            "tag":""
         },
 
         {
             "text":"Dejenme en paaaz!!",
             "soundURL":"./assets/sounds/dejenme_en_paz.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Ese es mi equipo",
             "soundURL":"./assets/sounds/ese_es_mi_equipo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Mi momento ha llegado",
             "soundURL":"./assets/sounds/mi_momento_ha_llegado.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Míralo",
             "soundURL":"./assets/sounds/miralo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Nooooo!!",
             "soundURL":"./assets/sounds/nooo.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Número equivocado",
             "soundURL":"./assets/sounds/numero_equivocado.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Por eso no kchan",
             "soundURL":"./assets/sounds/por_eso_no_khan.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Que me lo rompan bien.",
             "soundURL":"./assets/sounds/que_me_lo_rompan_bien.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Rotala ps",
             "soundURL":"./assets/sounds/rotala_ps.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"Tranquilo Harry",
             "soundURL":"./assets/sounds/tranquilo_harry.mp3",
-            "tag":"Hot"
+            "tag":""
         },
         {
             "text":"A eso me refería",
             "soundURL":"./assets/sounds/a_eso_me_referia.mp3",
-            "tag":"Hot"
+            "tag":""
         },
  
         {
@@ -578,12 +658,7 @@
             "text":"Asu mare",
             "soundURL":"./assets/sounds/asu_mare.mp3",
             "tag":""
-        },
-        {
-            "text":"Hay talento",
-            "soundURL":"./assets/sounds/hay_talento.mp3",
-            "tag":""
-        },
+        },        
         {
             "text":"Les voy a contar algo",
             "soundURL":"./assets/sounds/les_voy_a_contar_algo.mp3",
