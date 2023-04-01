@@ -19,6 +19,17 @@
   justify-content: center;
   margin:0;
 }
+.share__wp{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.share__wp label,a{
+  color: #9e9fb6;
+}
+.share__wp a{
+  font-size: small;
+}
 .network__list{
   display: flex;
   gap: 20px;
@@ -221,4 +232,4 @@
   .sounds__tittle{
     font-size: 2.5em;
   }
-  }
+}
