@@ -1,8 +1,10 @@
 export class Sound {
 	constructor(
-        public text:string,
-        public soundURL:string,
-        public tag:string
+                public id:string,
+                public fav:string,
+                public text:string,
+                public soundURL:string,
+                public tag:string
         ) 
 {}
 }

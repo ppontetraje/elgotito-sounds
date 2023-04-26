@@ -32,18 +32,26 @@
       <div class="sound__button" *ngFor="let item of soundList">
         <a class="link__sound" (click)="_sound.playSound(item.soundURL)">
           <span class="text__button">{{ item.text }}</span>
+         
         </a>
         <div class="tag__btn" *ngIf="item.tag=='New'; else elseBlock">
           <span class="new__text">{{item.tag}}</span>
+          <span class="right__tag">
+            <i class="far fa-star"></i>
+            <span class="tooltiptext">Añadir a favoritos</span>
+          </span>
         </div>
         <ng-template #elseBlock>
           <div *ngIf="item.tag=='Hot'; else elseBlock2" class="tag__btn" >
             <span class="hot__text">{{ item.tag }}</span>
+            <span class="right__tag"><i class="far fa-star"></i> </span>
           </div>
         </ng-template> 
         <ng-template #elseBlock2>
           <div class="tag__btn" >
-            <span class="top__text">{{ item.tag }}</span></div>
+            <span class="top__text">{{ item.tag }} </span>
+            <span class="right__tag"><i class="far fa-star"></i> </span>
+          </div>  
         </ng-template> 
       </div>
 

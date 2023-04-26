@@ -18,6 +18,12 @@ export class SoundComponent implements OnInit {
     }
 
     public getAllSounds(): Sound[] {
+     /** 
+      for (let index = 0; index < packageInfo.sounds.length; index++) {
+        packageInfo.sounds[index].id = (index+1)+"";
+      }
+      console.log(packageInfo.sounds) 
+      */
       return packageInfo.sounds;
     }
     
