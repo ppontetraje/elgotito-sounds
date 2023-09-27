@@ -19,7 +19,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { DownloadListComponent } from './components/download-list/download-list.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { DownloadListComponent } from './components/download-list/download-list.
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    NgxPaginationModule
   ],
   providers: [
     SoundComponent

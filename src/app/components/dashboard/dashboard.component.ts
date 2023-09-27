@@ -10,9 +10,14 @@ import { SoundComponent } from '../sound/sound.component';
 })
 export class DashboardComponent implements OnInit{
   soundList!:any[];
-  errMsg!:string;
+  p:number = 1;
+  itemsPerPage!:number;
+  totalProduct: any;
+
   constructor(public _sound:SoundComponent){
     this.soundList = this._sound.getAllSounds();
+    this.totalProduct = this.soundList.length;
+    this.itemsPerPage = this.totalProduct/ 7;
   }
   ngOnInit(): void {
     
