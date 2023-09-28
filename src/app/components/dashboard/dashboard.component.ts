@@ -6,7 +6,7 @@ import { SoundComponent } from '../sound/sound.component';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit{
   soundList!:any[];
@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit{
   constructor(public _sound:SoundComponent){
     this.soundList = this._sound.getAllSounds();
     this.totalProduct = this.soundList.length;
-    this.itemsPerPage = this.totalProduct/ 7;
+    this.itemsPerPage = this.totalProduct/ 10;
   }
   ngOnInit(): void {
     

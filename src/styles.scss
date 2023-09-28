@@ -14,21 +14,8 @@ body {
     /*background-image: linear-gradient(to left bottom, #00754b, #358d68, #57a685, #78bfa3, #9ad9c1, #a1dcc6, #a9e0cc, #b0e3d1, #9ed0bf, #8cbead, #7bac9c, #6a9a8b);
 */
 }
+.ngx-pagination {
+  color: #fff;
+  padding-left: 0%;
+}
 
-
-  .ngx-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .ngx-pagination li{
-    width: 35px;
-    height: 35px;
-    border-radius: 50% !important;
-    background-color: #f8f8f8;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }

@@ -30,7 +30,8 @@
   
     <div class="side__container"><a  href="./assets/images/el_pelao.jpg" target="_blank"></a></div>
   
-    <div class="button__container">
+    <div class="pagination__container">
+      <div class="button__container">
       <div class="sound__button" *ngFor="let item of soundList | paginate: { itemsPerPage: itemsPerPage, currentPage: p}">
         <a class="link__sound" (click)="_sound.playSound(item.soundURL)">
           <span class="text__button">{{ item.text }}</span>
@@ -55,12 +56,12 @@
             <span class="right__tag"><i class="far fa-star"></i> </span>
           </div>  
         </ng-template> 
-      </div>
-      <div class="mt-8 py-5 flex justify-center items-center">
-        <pagination-controls (pageChange)="p = $event" [maxSize]="3"></pagination-controls> 
-      </div>
-      
+      </div>     
     </div>
+    <div class="pagination__ngx__container mt-8 py-5">
+      <pagination-controls (pageChange)="p = $event" [maxSize]="3"></pagination-controls> 
+    </div>
+  </div>
    
     <div class="side__container"><a  href="./assets/images/el_gotito_pelao.jpg" target="_blank"></a></div>
   </div>
