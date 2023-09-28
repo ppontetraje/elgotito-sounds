@@ -4,7 +4,7 @@ declare var window : any;
 @Component({
   selector: 'app-modalx',
   templateUrl: './modalx.component.html',
-  styleUrls: ['./modalx.component.scss']
+  styleUrls: ['./modalx.component.css']
 })
 export class ModalxComponent implements OnInit {
 

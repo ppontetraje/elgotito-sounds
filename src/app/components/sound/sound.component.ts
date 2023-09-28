@@ -4,7 +4,7 @@ import  packageInfo from '../../../assets/data.json';
 @Component({
   selector: 'app-sound',
   templateUrl: './sound.component.html',
-  styleUrls: ['./sound.component.scss']
+  styleUrls: ['./sound.component.css']
 })
 export class SoundComponent implements OnInit {
   
