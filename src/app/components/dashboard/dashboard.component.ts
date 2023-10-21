@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit{
   constructor(public _sound:SoundComponent){
     this.soundList = this._sound.getAllSounds();
     this.totalProduct = this.soundList.length;
-    this.itemsPerPage = this.totalProduct/ 10;
+    this.itemsPerPage = 35;
   }
   ngOnInit(): void {
     
