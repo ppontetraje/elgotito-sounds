@@ -1,10 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --color-primary: #092337;      /* Azul marino oscuro - textos principales, íconos */
+  --color-secondary: #5de195;    /* Verde aguamarina - enlaces principales, iconos de acción */
+  --color-accent: #FFD166;       /* Amarillo suave - highlights, tags "New" */
+  --color-success: #2EC4B6;      /* Verde esmeralda - tags "Top", estados positivos */
+  --color-warning: #FF6B35;      /* Naranja vibrante - tags "Hot", alertas */
+  --color-light: #FFFFFF;        /* Blanco - fondos, contraste */
+  --color-dark: #00031B;         /* Azul muy oscuro - hover, textos inversos */
+  --color-gray: #9E9EB6;         /* Gris azulado - textos secundarios, bordes, fondo de botones */
+  --color-bg: #F8F9FA;           /* Gris muy claro - fondos de sección */
+  --color-text: #394955;         /* Azul grisáceo - textos de contenido como botones */
+}
+
 *{
     font-family: "Bebas Neue";
 }
 html, body { height: 100%; }
-body { 
+body {
     background: url("./assets/svg/eg_background_home.svg")  no-repeat center center fixed;
     background-position: center;
     -webkit-background-size: cover;
@@ -15,7 +28,6 @@ body {
 */
 }
 .ngx-pagination {
-  color: #fff;
+  color: var(--color-light);
   padding-left: 0%;
 }
-

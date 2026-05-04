@@ -14,7 +14,7 @@
   font-weight:  600;
   font-size: 5em;
   /*text-shadow: -1px -1px white, 1px 1px #333;*/
-  color:#fff;
+  color:var(--color-light);
   align-items: center;
   justify-content: center;
   margin:0;
@@ -25,7 +25,7 @@
   column-gap: 10px;
 }
 .share__wp label,a{
-  color: #9e9fb6;
+  color: var(--color-gray);
 }
 .share__wp a{
   font-size: small;
@@ -33,15 +33,14 @@
 .network__list{
   display: flex;
   gap: 20px;
-  color:#092337;
- 
+  color:var(--color-primary);
 }
 .fab{
   font-size: 3em;
   text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);
 }
 .social__network{
-  color:#092337;
+  color:var(--color-primary);
 }
 .button__container{
   width: 100%;
@@ -63,17 +62,7 @@
   position: relative;
   background-position: top;
   background-size: contain;
-}/*
-.mobile__picture{
-	height: 10%x;
-	background-image: url("../../../assets/images/el_gotito_pelao.jpg");
-	background-size: cover;
-  
-	background-size: contain;
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: center;
-  }*/
+}
 .side__container a{
   /*display: none;*/
   position: absolute;
@@ -86,7 +75,7 @@
   height: 125px;
   border-radius: 50%;
   border: solid 1px transparent;
-  background-color: #9CADBC;
+  background-color: var(--color-gray);
   justify-content: center;
   align-items: center;
   position: relative;
@@ -106,27 +95,27 @@
   cursor: default;
 }
 .new__text{
-  color: yellow;
-  
+  color: var(--color-accent);
+
 }
 .right__tag{
-  color: orange;
+  color: var(--color-warning);
   cursor: pointer	!important;
 }
 .top__text{
-  color: rgb(44, 215, 29);
-  
+  color: var(--color-success);
+
 }
 .hot__text{
-  color: orange;
-  
+  color: var(--color-warning);
+
 }
 .link__sound:before {
-  
+
     content: "";
     display: block;
-    background: #00111C;
-    border-top: 1px solid #9CADBB;
+    background: var(--color-dark);
+    border-top: 1px solid var(--color-gray);
     position: absolute;
     top: -10px;
     left: -10px;
@@ -134,7 +123,7 @@
     right: -10px;
     z-index: -1;
     border-radius: 50%;
-    box-shadow: inset 0px 8px 50px #9CADBB;
+    box-shadow: inset 0px 8px 50px var(--color-gray);
 }
 .link__sound{
   width: 100%;
@@ -146,21 +135,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0px 3px 8px #394955, inset 0px 2px 3px #fff;
-  
-  color: 394955;
+  box-shadow: 0px 3px 8px var(--color-text), inset 0px 2px 3px var(--color-light);
+
+  color: var(--color-text);
 }
 .link__sound:hover{
   cursor: pointer;
 }
 .link__sound:active {
-  box-shadow: 0px 3px 4px #394955 inset, 0px 2px 6px #fff;
+  box-shadow: 0px 3px 4px var(--color-text) inset, 0px 2px 6px var(--color-light);
 }
 .right__tag .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -181,162 +170,15 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #394955;
+  color: var(--color-text);
   font-weight: 300;
   font-size: 1.3em;
 }
 .text__button:hover{
-  
-  color: #000;
+
+  color: var(--color-dark);
 }
 .gotito__fb{
-  background-color: rgba(255, 255, 255);
+  background-color: var(--color-light);
 
-}
-/*asdasdad
-::ng-deep{
-  .ngx-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .ngx-pagination li{    
-    width: 35px;
-    height: 35px;
-    border-radius: 50% !important;
-    background-color: #f8f8f8;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  
-    &.small-screen{
-      display: none !important;
-    }
-
-    &.pagination-previous,
-    &.pagination-next{
-      a,span{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-        color: #f8f8f8;
-      }
-    }
-  }
-  .ngx-pagination .pagination-previous a:before,
-  .ngx-pagination .pagination-previous.disabled:before,
-  .ngx-pagination .pagination-next::before{
-    margin-right: 0px !important;
-    font-size: 26px;;
-    margin-top: -8px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;  
-  }
-  .ngx-pagination .pagination-next::before{
-    content: '\bb';
-  }
-  .ngx-pagination .pagination-next::after{
-    display: none !important;
-  }
-  .ngx-pagination .pagination-previous.disabled:before{
-    opacity: 0.4;
-  }
-  .ngx-pagination .pagination-previous.disabled:hover{
-    background: #f8f8f8 !important;
-  }
-  .ngx-pagination a:hover,
-  .ngx-pagination button:hover{
-    background: initial !important;
-
-  }
-}
-*/
-.pagination__container{
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  align-items: center;
-}
-.pagination-controls-gotito{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media only screen and (max-width: 460px) {
-  .link__sound:before {
-
-    border-top: 2px solid #ddd;
-    top: -6px;
-    left: -6px;
-    bottom: -6px;
-    right: -6px;
-    box-shadow: inset 0px 6px 25px #ddd;
-}
-.sounds__tittle{
-  font-weight:  600;
-  font-size: 3.2em;
-  
-}
-.fab{
-  font-size: 2em;
-}
-  .button__container{
-    width: 90%;
-    gap: 30px;
-    padding-top: 5px;
-  }
-  .sound__button{
-    width: 80px;
-    height: 80px;
-  }
-  .side__container{
-    width: 15%;
-    background-size: contain;
-    background-position: center;
-  }
-  .text__button{
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1410px) {
-  .side__container{
-    width: 15%;
-    background-size: contain;
-    
-      background-position: center;
-    
-  }
-}
-@media only screen and (max-width: 260px) {
-
-.sounds__tittle{
-  font-size: 1.5em !important;
-}
-.pagination-controls-gotito{
-  font-size: 0.05em;
-}
-}
-@media only screen and (max-width: 900px) {
-  .side__container{
-    background-image: url("../../../assets/images/el_gotito_pelao.jpg");
-  }
-}
-@media only screen and (max-width: 570px) {
-  .gotito__fb{
-    display: none;
-  }
-  .sounds__tittle{
-    font-size: 2.5em;
-  }
 }

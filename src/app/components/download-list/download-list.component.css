@@ -8,14 +8,14 @@
     font-family: 'Bebas Neue', sans-serif;
     font-weight:  600;
     font-size: 5em;
-    color: white;
+    color: var(--color-light);
     /*text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);*/
     margin:0;
 }
 
 .link__sound{
  text-decoration: none;
- color: rgb(255, 255, 255);
+ color: var(--color-light);
 }
 
 .list__container{
@@ -25,12 +25,13 @@
     row-gap: 10px;
 
 }
+
 .sound__button{
     width: 25%;
     display: flex;
     justify-content: space-between;
     /*-webkit-backdrop-filter: blur(50px);
-	backdrop-filter: blur(10px);*/
+		backdrop-filter: blur(10px);*/
     border-radius: 18px;
     align-items: center;
 }
@@ -42,64 +43,65 @@ cursor: default;
     margin-right: 10px;
     }
 .gotito__fb{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-light);
     margin-top: 15px;
 }
 .text__button{
-    color: #ffffff;
+    color: var(--color-light);
     font-family: 'Bebas Neue', sans-serif;
-    
+
     font-size: 1.5em;
     text-shadow: -0.5px -0.5px rgb(245, 245, 245), 1px 1px rgb(49, 49, 49);
 }
 .fa-arrow-alt-circle-down{
- color: #5de195;
+ color: var(--color-secondary);
  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1200px) {
-    
+
     .fa-arrow-alt-circle-down{
         font-size: 0.9em;
        }
        .text__button{
-     
+
         font-size: 0.9em;
        }
   }
 
-@media only screen and (max-width: 768px) {
- 
+  @media only screen and (max-width: 768px) {
+
     .sound__button{
         width: 33.3%;
     }
     .sounds__tittle{
         font-size: 3em;
     }
-}
- 
+  }
+
   @media only screen and (max-width: 600px) {
-  
+
     .sound__button{
         width: 50%;
     }
   }
-  @media only screen and (max-width: 570px) {
-	.gotito__fb{
-	  display: none;
-	}
-	}
-  @media only screen and (max-width: 380px) {
-    .sounds__tittle{
-        font-size: 2em;
-    }
-    .text__button{
-        font-size: 0.7em;
-    }
-    }
-    @media only screen and (max-width: 320px) {
-        .sound__button{
-            width: 100%;
-        }
-        
-        }
+    @media only screen and (max-width: 570px) {
+		.gotito__fb{
+		  display: none;
+		}
+		}
+	  @media only screen and (max-width: 380px) {
+
+	    .sounds__tittle{
+	        font-size: 2em;
+	    }
+	    .text__button{
+	        font-size: 0.7em;
+	    }
+	    }
+      @media only screen and (max-width: 320px) {
+          .sound__button{
+              width: 100%;
+          }
+
+          }
