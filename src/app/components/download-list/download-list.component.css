@@ -51,7 +51,7 @@ cursor: default;
     font-family: 'Bebas Neue', sans-serif;
 
     font-size: 1.5em;
-    text-shadow: -0.5px -0.5px rgb(245, 245, 245), 1px 1px rgb(49, 49, 49);
+    text-shadow: -0.5px -0.5px var(--color-light), 1px 1px var(--color-gray);
 }
 .fa-arrow-alt-circle-down{
  color: var(--color-secondary);

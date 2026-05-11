@@ -1,0 +1,47 @@
+.app-footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Push to bottom in flex container */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social__network {
+  display: inline-block;
+  color: var(--color-light);
+  font-size: 1.5em;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social__network:hover {
+  transform: scale(1.2);
+  color: var(--color-secondary);
+}
+
+.social__network:active {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .social__network {
+    font-size: 1.2em;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}

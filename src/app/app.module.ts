@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DynamicComponentDirective } from './directives/dynamic-component.directive';
 import { SoundComponent } from './components/sound/sound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -28,6 +29,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     DynamicComponentDirective,
     SoundComponent,
     NavigationComponent,
+    FooterComponent,
     DashboardComponent,
     DownloadListComponent
   ],
@@ -46,9 +48,13 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatMenuModule,
     NgxPaginationModule
   ],
+  exports: [
+    NavigationComponent,
+    FooterComponent
+  ],
   providers: [
     SoundComponent
-],
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

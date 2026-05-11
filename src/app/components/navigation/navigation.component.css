@@ -1,6 +1,7 @@
 .menu__nav{
   display: flex;
   justify-content: center;
+  outline: none;
 }
 
 .menu-bar {
@@ -22,6 +23,7 @@
 		cursor: pointer;
     text-decoration:none;
     font-size: larger;
+    outline: none;
   }
 
 .menu-bar	a::before {

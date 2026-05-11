@@ -1,16 +1,3 @@
-<head>
-  <meta name="title" content="El Gotito Sounds | Audios de Matthew">
-  <meta name="description" content="El Gotito Sounds. Recopilación de audios más divertidos de Matthew Dota 2.">
-  <meta name="keywords" content="Audios de Matthew, El gotito Sounds, Sonidos del Gotito,El Gotito, Dota 2, El Gottito, sonidos de matthew dota 2">
-  <meta name="robots" content="index, follow">
-  <meta name="revisit-after" content="7 days">
-  <meta property="og:title" content="El Gotito Sounds | Audios de Matthew">
-  <meta property="og:site_name" content="El Gotito Sounds">
-  <meta property="og:url" content="https://ppontetraje.github.io/elgotito-sounds/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es" />
-  <meta property="og:description" content="El Gotito Sounds. Recopilación de audios más divertidos de Matthew Dota 2.">
-</head>
 <div class="main__container">
   <h1 class="sounds__tittle">EL GOTITO SOUNDS</h1>
   <div class="share__wp">
@@ -28,32 +15,47 @@
 
   <div class="container__divider">
   
-    <div class="side__container"><a  href="./assets/images/el_pelao.jpg" target="_blank"></a></div>
+    <div class="side__container"></div>
   
     <div class="pagination__container">
       <div class="button__container">
       <div class="sound__button" *ngFor="let item of soundList | paginate: { itemsPerPage: itemsPerPage, currentPage: p}">
-        <a class="link__sound" (click)="_sound.playSound(item.soundURL)">
+        <a class="link__sound" (click)="playSound(item.soundURL)">
           <span class="text__button">{{ item.text }}</span>
          
         </a>
         <div class="tag__btn" *ngIf="item.tag=='New'; else elseBlock">
           <span class="new__text">{{item.tag}}</span>
-          <span class="right__tag">
-            <i class="far fa-star"></i>
-            <span class="tooltiptext">Añadir a favoritos</span>
+          <span class="right__tag" (click)="toggleFavorite(item)">
+            <i class="far fa-star" *ngIf="item.fav !== 'true'"></i>
+            <i class="fas fa-star favorite-star" *ngIf="item.fav === 'true'"></i>
+            <span class="tooltiptext">
+              {{ item.fav === 'true' ? 'Quitar de favoritos' : 'Añadir a favoritos' }}
+            </span>
           </span>
         </div>
         <ng-template #elseBlock>
           <div *ngIf="item.tag=='Hot'; else elseBlock2" class="tag__btn" >
             <span class="hot__text">{{ item.tag }}</span>
-            <span class="right__tag"><i class="far fa-star"></i> </span>
+            <span class="right__tag" (click)="toggleFavorite(item)">
+              <i class="far fa-star" *ngIf="item.fav !== 'true'"></i>
+              <i class="fas fa-star favorite-star" *ngIf="item.fav === 'true'"></i>
+              <span class="tooltiptext">
+                {{ item.fav === 'true' ? 'Quitar de favoritos' : 'Añadir a favoritos' }}
+              </span>
+            </span>
           </div>
         </ng-template> 
         <ng-template #elseBlock2>
           <div class="tag__btn" >
             <span class="top__text">{{ item.tag }} </span>
-            <span class="right__tag"><i class="far fa-star"></i> </span>
+            <span class="right__tag" (click)="toggleFavorite(item)">
+              <i class="far fa-star" *ngIf="item.fav !== 'true'"></i>
+              <i class="fas fa-star favorite-star" *ngIf="item.fav === 'true'"></i>
+              <span class="tooltiptext">
+                {{ item.fav === 'true' ? 'Quitar de favoritos' : 'Añadir a favoritos' }}
+              </span>
+            </span>
           </div>  
         </ng-template> 
       </div>     
@@ -63,7 +65,7 @@
     </div>
   </div>
    
-    <div class="side__container"><a  href="./assets/images/el_gotito_pelao.jpg" target="_blank"></a></div>
+    <div class="side__container"></div>
   </div>
   <div class="fb-comments gotito__fb" data-href="https://ppontetraje.github.io/elgotito-sounds/" data-mobile data-width="" data-numposts="10"></div>
   

@@ -29,6 +29,23 @@
 }
 .share__wp a{
   font-size: small;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  color: var(--color-gray);
+}
+.share__wp a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-light);
+  transform: scale(1.1);
+}
+.share__wp a:active{
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(0.9);
 }
 .network__list{
   display: flex;
@@ -37,7 +54,7 @@
 }
 .fab{
   font-size: 3em;
-  text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);
+  text-shadow: -1px -1px var(--color-light), 1px 1px var(--color-gray);
 }
 .social__network{
   color:var(--color-primary);
@@ -57,24 +74,36 @@
 }
 .side__container{
   width: 15%;
-  background-image: url("../../../assets/images/el_gotito_pelao.jpg");
   /*background-size: cover;*/
   position: relative;
   background-position: top;
   background-size: contain;
+  border: none;
+  outline: none;
 }
-.side__container a{
+.side__container a,
+.side__container a:hover,
+.side__container a:focus,
+.side__container a:active,
+.side__container a:visited,
+.side__container a::before,
+.side__container a::after{
   /*display: none;*/
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
 }
 .sound__button{
   display: flex;
   width: 125px;
   height: 125px;
   border-radius: 50%;
-  border: solid 1px transparent;
   background-color: var(--color-gray);
   justify-content: center;
   align-items: center;
@@ -90,7 +119,7 @@
     align-items: center;
 }
 .tag__btn span{
-  text-shadow: -1px -1px rgb(68, 68, 68), 1.5px 1.5px rgb(56, 56, 56);
+  text-shadow: -1px -1px var(--color-gray), 1.5px 1.5px var(--color-dark);
   font-family: 'Oleo Script';
   cursor: default;
 }
@@ -101,6 +130,24 @@
 .right__tag{
   color: var(--color-warning);
   cursor: pointer	!important;
+  transition: all 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.right__tag:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+  cursor: pointer !important;
+}
+.right__tag:active{
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+  cursor: pointer !important;
 }
 .top__text{
   color: var(--color-success);
@@ -136,6 +183,7 @@
   align-items: center;
   border-radius: 50%;
   box-shadow: 0px 3px 8px var(--color-text), inset 0px 2px 3px var(--color-light);
+  outline: none;
 
   color: var(--color-text);
 }
@@ -153,10 +201,15 @@
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
+  pointer-events: none;
 
-  /* Position the tooltip */
+  /* Position the tooltip above the button */
   position: absolute;
   z-index: 1;
+  bottom: 125%; /* Position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 4px;
 }
 
 .right__tag:hover .tooltiptext {
@@ -180,5 +233,95 @@
 }
 .gotito__fb{
   background-color: var(--color-light);
+}
 
+.favorite-star{
+  color: var(--color-accent);
+  cursor: pointer !important;
+}
+.far.fa-star,
+.fas.fa-star{
+  cursor: pointer !important;
+}
+
+
+.pagination__container{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+.pagination-controls-gotito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 460px) {
+  .link__sound:before {
+
+    border-top: 2px solid var(--color-gray);
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    box-shadow: inset 0px 6px 25px var(--color-gray);
+}
+.sounds__tittle{
+  font-weight:  600;
+  font-size: 3.2em;
+
+}
+.fab{
+  font-size: 2em;
+}
+  .button__container{
+    width: 90%;
+    gap: 30px;
+    padding-top: 5px;
+  }
+  .sound__button{
+    width: 80px;
+    height: 80px;
+  }
+  .side__container{
+    width: 15%;
+    background-size: contain;
+    background-position: center;
+  }
+  .text__button{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1410px) {
+  .side__container{
+    width: 15%;
+    background-size: contain;
+
+      background-position: center;
+
+  }
+}
+@media only screen and (max-width: 260px) {
+
+.sounds__tittle{
+  font-size: 1.5em !important;
+}
+.pagination-controls-gotito{
+  font-size: 0.05em;
+}
+}
+@media only screen and (max-width: 900px) {
+  .side__container{
+  }
+}
+@media only screen and (max-width: 570px) {
+  .gotito__fb{
+    display: none;
+  }
+  .sounds__tittle{
+    font-size: 2.5em;
+  }
 }
