@@ -17,12 +17,9 @@
   <div class="list__container">
     <div class="sound__button" *ngFor="let item of soundList">
       <span class="text__button">{{ item.text }}</span>
-      <a class="link__sound" download={{item.text}} href={{item.soundURL}}>
+      <a class="link__sound" [download]="item.text" [href]="item.soundURL" [title]="'Descargar ' + item.text">
         <i class="fas fa-arrow-alt-circle-down"></i>
       </a>
     </div>
-  </div>
-  <div class="fb-comments gotito__fb" data-href="https://ppontetraje.github.io/elgotito-sounds/audios" data-mobile
-    data-width="" data-numposts="10">
   </div>
 </div>

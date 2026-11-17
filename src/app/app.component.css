@@ -6,10 +6,14 @@
 
 app-navigation {
   flex-shrink: 0;
+  position: relative;
+  z-index: 20;
 }
 
-router-outlet {
+app-dashboard,
+app-download-list {
   flex-grow: 1;
+  display: block;
 }
 
 app-footer {

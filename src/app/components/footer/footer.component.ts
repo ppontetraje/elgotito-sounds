@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SoundComponent } from '../sound/sound.component';
+import { SoundService } from '../../services/sound.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +7,5 @@ import { SoundComponent } from '../sound/sound.component';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  constructor(public _sound: SoundComponent) { }
+  constructor(public _sound: SoundService) { }
 }

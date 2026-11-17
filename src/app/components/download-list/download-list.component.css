@@ -1,107 +1,124 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px 40px;
 }
 
-.sounds__tittle{
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight:  600;
-    font-size: 5em;
-    color: var(--color-light);
-    /*text-shadow: -1px -1px rgb(245, 245, 245), 1px 1px rgb(98, 101, 112);*/
-    margin:0;
+.sounds__tittle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  color: var(--color-light);
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(229, 193, 88, 0.2), 0 0 35px rgba(224, 76, 56, 0.15);
+  margin: 10px 0 25px;
+  text-align: center;
 }
 
-.link__sound{
- text-decoration: none;
- color: var(--color-light);
+.list__container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
-.list__container{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 10px;
-
+.sound__button {
+  width: calc(25% - 16px);
+  min-width: 220px;
+  min-height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1e2630 0%, #10151c 100%);
+  border: 1px solid #2f3e50;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
 }
 
-.sound__button{
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    /*-webkit-backdrop-filter: blur(50px);
-		backdrop-filter: blur(10px);*/
-    border-radius: 18px;
-    align-items: center;
+.sound__button:hover {
+  border-color: #e04c38;
+  box-shadow: 0 0 14px rgba(224, 76, 56, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
-.sound__button span{
-margin-left: 10px;
-cursor: default;
-}
-.sound__button a{
-    margin-right: 10px;
-    }
-.gotito__fb{
-    background-color: var(--color-light);
-    margin-top: 15px;
-}
-.text__button{
-    color: var(--color-light);
-    font-family: 'Bebas Neue', sans-serif;
 
-    font-size: 1.5em;
-    text-shadow: -0.5px -0.5px var(--color-light), 1px 1px var(--color-gray);
+.sound__button:active {
+  transform: translateY(0);
 }
-.fa-arrow-alt-circle-down{
- color: var(--color-secondary);
- font-size: 1.5em;
+
+.text__button {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  color: #cbd5e1;
+  text-align: left;
+  line-height: 1.15;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.sound__button:hover .text__button {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.link__sound {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.fa-arrow-alt-circle-down {
+  color: #e5c158;
+  font-size: 1.35em;
+  transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.sound__button:hover .fa-arrow-alt-circle-down {
+  color: #ffd166;
+  text-shadow: 0 0 10px rgba(255, 209, 102, 0.7);
+  transform: scale(1.15);
 }
 
 @media only screen and (max-width: 1200px) {
-
-    .fa-arrow-alt-circle-down{
-        font-size: 0.9em;
-       }
-       .text__button{
-
-        font-size: 0.9em;
-       }
+  .sound__button {
+    width: calc(33.333% - 16px);
   }
+}
 
-  @media only screen and (max-width: 768px) {
-
-    .sound__button{
-        width: 33.3%;
-    }
-    .sounds__tittle{
-        font-size: 3em;
-    }
+@media only screen and (max-width: 768px) {
+  .sound__button {
+    width: calc(50% - 12px);
+    min-width: 180px;
   }
-
-  @media only screen and (max-width: 600px) {
-
-    .sound__button{
-        width: 50%;
-    }
+  .sounds__tittle {
+    font-size: 3em;
   }
-    @media only screen and (max-width: 570px) {
-		.gotito__fb{
-		  display: none;
-		}
-		}
-	  @media only screen and (max-width: 380px) {
+  .list__container {
+    width: 95%;
+    gap: 12px;
+  }
+}
 
-	    .sounds__tittle{
-	        font-size: 2em;
-	    }
-	    .text__button{
-	        font-size: 0.7em;
-	    }
-	    }
-      @media only screen and (max-width: 320px) {
-          .sound__button{
-              width: 100%;
-          }
-
-          }
+@media only screen and (max-width: 480px) {
+  .sound__button {
+    width: 100%;
+    min-width: 0;
+  }
+  .sounds__tittle {
+    font-size: 2.4em;
+  }
+  .text__button {
+    font-size: 1rem;
+  }
+}

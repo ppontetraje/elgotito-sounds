@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SoundComponent } from '../sound/sound.component';
+import { SoundService } from '../../services/sound.service';
 
 @Component({
   selector: 'app-navigation',
@@ -8,7 +8,7 @@ import { SoundComponent } from '../sound/sound.component';
 })
 export class NavigationComponent {
   data: any;
-  constructor(public _sound:SoundComponent){
+  constructor(public _sound: SoundService){
 
   }
 }

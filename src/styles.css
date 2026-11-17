@@ -1,33 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-  --color-primary: #092337;      /* Azul marino oscuro - textos principales, íconos */
-  --color-secondary: #5de195;    /* Verde aguamarina - enlaces principales, iconos de acción */
-  --color-accent: #FFD166;       /* Amarillo suave - highlights, tags "New" */
-  --color-success: #2EC4B6;      /* Verde esmeralda - tags "Top", estados positivos */
-  --color-warning: #FF6B35;      /* Naranja vibrante - tags "Hot", alertas */
-  --color-light: #FFFFFF;        /* Blanco - fondos, contraste */
-  --color-dark: #00031B;         /* Azul muy oscuro - hover, textos inversos */
-  --color-gray: #9E9EB6;         /* Gris azulado - textos secundarios, bordes, fondo de botones */
-  --color-bg: #F8F9FA;           /* Gris muy claro - fondos de sección */
-  --color-text: #394955;         /* Azul grisáceo - textos de contenido como botones */
+  --color-primary: #e04c38;
+  --color-secondary: #e5c158;
+  --color-accent: #ffd166;
+  --color-success: #2ec4b6;
+  --color-warning: #ff6a3c;
+  --color-light: #f1f5f9;
+  --color-dark: #0a0e14;
+  --color-gray: #7d8c9e;
+  --color-bg: #0d1217;
+  --color-text: #cbd5e1;
+  --color-border: #222f3e;
+  --color-surface: #121820;
 }
 
-*{
-    font-family: "Bebas Neue";
+* {
+  font-family: "Bebas Neue", sans-serif;
+  box-sizing: border-box;
 }
-html, body { height: 100%; }
+
+html, body {
+  min-height: 100%;
+}
+
 body {
-    background: url("./assets/svg/eg_background_home.svg")  no-repeat center center fixed;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*background-image: linear-gradient(to left bottom, #00754b, #358d68, #57a685, #78bfa3, #9ad9c1, #a1dcc6, #a9e0cc, #b0e3d1, #9ed0bf, #8cbead, #7bac9c, #6a9a8b);
-*/
+  margin: 0;
+  color: var(--color-text);
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(229, 193, 88, 0.08) 0%, transparent 50%), 
+    radial-gradient(circle at 15% 40%, rgba(224, 76, 56, 0.06) 0%, transparent 45%), 
+    radial-gradient(circle at 85% 70%, rgba(46, 196, 182, 0.04) 0%, transparent 45%), 
+    url("./assets/svg/dota_matthew_bg.svg") repeat, 
+    #0d1217;
+  background-attachment: fixed;
+  background-size: 100% 100%, 100% 100%, 100% 100%, 800px 800px, auto;
 }
+
 .ngx-pagination {
-  color: var(--color-light);
-  padding-left: 0%;
+  color: var(--color-text);
+  padding-left: 0;
+}
+
+.ngx-pagination .current {
+  background: var(--color-primary) !important;
+  color: var(--color-light) !important;
+  border-radius: 4px;
+}
+
+.ngx-pagination a:hover {
+  background: var(--color-border) !important;
+  color: var(--color-secondary) !important;
 }

@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { SoundComponent } from '../sound/sound.component';
-import { Sound } from 'src/app/models/Sound';
+import { Observable } from 'rxjs';
+import { SoundService } from '../../services/sound.service';
+import { Sound } from '../../models/Sound';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit {
   soundList: Sound[] = [];
   p: number = 1;
   itemsPerPage: number = 35;
   totalProduct: number = 0;
+  currentPlayingId$: Observable<string | null>;
 
-  constructor(private _sound: SoundComponent) {
-    this.soundList = this._sound.getAllSounds();
+  constructor(public soundService: SoundService) {
+    this.soundList = this.soundService.getAllSounds();
     this.totalProduct = this.soundList.length;
+    this.currentPlayingId$ = this.soundService.currentPlayingId$;
   }
 
   ngOnInit(): void {
@@ -44,21 +47,31 @@ export class DashboardComponent implements OnInit{
    */
   private sortFavoritesFirst(): void {
     this.soundList.sort((a, b) => {
-      // If both are favorites or both are not favorites, maintain original order
       if ((a.fav === 'true' && b.fav === 'true') || (a.fav !== 'true' && b.fav !== 'true')) {
         return 0;
       }
-      // If a is favorite and b is not, a comes first (negative return value)
       if (a.fav === 'true' && b.fav !== 'true') {
         return -1;
       }
-      // If a is not favorite and b is, b comes first (positive return value)
       return 1;
     });
   }
 
-  playSound(path: string): void {
-    this._sound.playSound(path);
+  playSound(sound: Sound | string): void {
+    const soundItem = typeof sound === 'string'
+      ? this.soundList.find(s => s.soundURL === sound || s.id === sound)
+      : sound;
+
+    const id = soundItem ? soundItem.id : (typeof sound === 'string' ? sound : '');
+
+    if (id && this.soundService.isPlaying(id)) {
+      this.soundService.stopSound();
+    } else {
+      this.soundService.playSound(soundItem || sound);
+    }
+  }
+
+  stopSound(): void {
+    this.soundService.stopSound();
   }
 }
-  

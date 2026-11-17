@@ -1,327 +1,316 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
-.main__container{
+.main__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.sounds__tittle{
+
+.sounds__tittle {
   display: flex;
   height: 60px;
   font-family: 'Bebas Neue', sans-serif;
-  font-weight:  600;
+  font-weight: 600;
   font-size: 5em;
-  /*text-shadow: -1px -1px white, 1px 1px #333;*/
-  color:var(--color-light);
+  color: var(--color-light);
   align-items: center;
   justify-content: center;
-  margin:0;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(229, 193, 88, 0.2), 0 0 35px rgba(224, 76, 56, 0.15);
 }
-.share__wp{
+
+.share__wp {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
-.share__wp label,a{
+
+.share__wp label {
   color: var(--color-gray);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
 }
-.share__wp a{
-  font-size: small;
+
+.share__wp a {
+  font-size: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: all 0.2s ease;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
   color: var(--color-gray);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease;
+  text-decoration: none;
 }
-.share__wp a:hover{
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-light);
-  transform: scale(1.1);
+
+.share__wp a:hover {
+  background-color: #1a232f;
+  color: var(--color-secondary);
+  border-color: rgba(229, 193, 88, 0.5);
+  box-shadow: 0 0 12px rgba(229, 193, 88, 0.4);
+  transform: translateY(-1px) scale(1.08);
 }
-.share__wp a:active{
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(0.9);
-}
-.network__list{
-  display: flex;
-  gap: 20px;
-  color:var(--color-primary);
-}
-.fab{
-  font-size: 3em;
-  text-shadow: -1px -1px var(--color-light), 1px 1px var(--color-gray);
-}
-.social__network{
-  color:var(--color-primary);
-}
-.button__container{
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 45px;
-  padding-top: 10px;
-}
-.container__divider{
+
+.container__divider {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.side__container{
+
+.side__container {
   width: 15%;
-  /*background-size: cover;*/
-  position: relative;
-  background-position: top;
-  background-size: contain;
-  border: none;
-  outline: none;
-}
-.side__container a,
-.side__container a:hover,
-.side__container a:focus,
-.side__container a:active,
-.side__container a:visited,
-.side__container a::before,
-.side__container a::after{
-  /*display: none;*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  background: transparent;
-}
-.sound__button{
-  display: flex;
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  background-color: var(--color-gray);
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
-.tag__btn{
-  display: flex;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-.tag__btn span{
-  text-shadow: -1px -1px var(--color-gray), 1.5px 1.5px var(--color-dark);
-  font-family: 'Oleo Script';
-  cursor: default;
-}
-.new__text{
-  color: var(--color-accent);
 
-}
-.right__tag{
-  color: var(--color-warning);
-  cursor: pointer	!important;
-  transition: all 0.1s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 5px;
-}
-.right__tag:hover{
-  background-color: rgba(0, 0, 0, 0.05);
-  transform: scale(1.1);
-  cursor: pointer !important;
-}
-.right__tag:active{
-  background-color: rgba(0, 0, 0, 0.1);
-  transform: scale(0.9);
-  cursor: pointer !important;
-}
-.top__text{
-  color: var(--color-success);
-
-}
-.hot__text{
-  color: var(--color-warning);
-
-}
-.link__sound:before {
-
-    content: "";
-    display: block;
-    background: var(--color-dark);
-    border-top: 1px solid var(--color-gray);
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    bottom: -10px;
-    right: -10px;
-    z-index: -1;
-    border-radius: 50%;
-    box-shadow: inset 0px 8px 50px var(--color-gray);
-}
-.link__sound{
-  width: 100%;
-  text-decoration: none;
-  height: 100%;
-  font-weight: 700;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 0px 3px 8px var(--color-text), inset 0px 2px 3px var(--color-light);
-  outline: none;
-
-  color: var(--color-text);
-}
-.link__sound:hover{
-  cursor: pointer;
-}
-.link__sound:active {
-  box-shadow: 0px 3px 4px var(--color-text) inset, 0px 2px 6px var(--color-light);
-}
-.right__tag .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  pointer-events: none;
-
-  /* Position the tooltip above the button */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Position above the button */
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 4px;
-}
-
-.right__tag:hover .tooltiptext {
-  visibility: visible;
-}
-
-.text__button{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-  font-weight: 300;
-  font-size: 1.3em;
-}
-.text__button:hover{
-
-  color: var(--color-dark);
-}
-.gotito__fb{
-  background-color: var(--color-light);
-}
-
-.favorite-star{
-  color: var(--color-accent);
-  cursor: pointer !important;
-}
-.far.fa-star,
-.fas.fa-star{
-  cursor: pointer !important;
-}
-
-
-.pagination__container{
+.pagination__container {
   display: flex;
   flex-direction: column;
   width: 70%;
   align-items: center;
 }
-.pagination-controls-gotito{
+
+.button__container {
+  width: 100%;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+/* Dota 2 Patch 7.41f Ability Tile */
+.sound__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 135px;
+  min-height: 105px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #1e2630 0%, #10151c 100%);
+  border: 1px solid var(--color-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 8px 10px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sound__button:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 14px rgba(224, 76, 56, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.sound__button:active {
+  transform: translateY(0);
+}
+
+/* Playing State */
+.sound__button.is-playing {
+  border-color: #e64522;
+  box-shadow: 0 0 18px #e64522, inset 0 0 12px rgba(230, 69, 34, 0.3);
+  animation: dota-pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes dota-pulse {
+  0%, 100% {
+    border-color: #e64522;
+    box-shadow: 0 0 18px #e64522, inset 0 0 12px rgba(230, 69, 34, 0.3);
+  }
+  50% {
+    border-color: var(--color-warning);
+    box-shadow: 0 0 24px rgba(230, 69, 34, 0.85), inset 0 0 16px rgba(255, 106, 60, 0.5);
+  }
+}
+
+/* Tile Header: Tag & Favorite */
+.tile__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 22px;
+}
+
+.tile__badge--empty {
+  display: inline-block;
+  width: 1px;
+}
+
+.tile__badge {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.badge--new {
+  background: rgba(255, 209, 102, 0.15);
+  color: var(--color-accent);
+  border: 1px solid rgba(255, 209, 102, 0.4);
+  text-shadow: 0 0 6px rgba(255, 209, 102, 0.6);
+}
+
+.badge--hot {
+  background: rgba(224, 76, 56, 0.18);
+  color: var(--color-warning);
+  border: 1px solid rgba(224, 76, 56, 0.45);
+  text-shadow: 0 0 6px rgba(224, 76, 56, 0.6);
+}
+
+.badge--top {
+  background: rgba(46, 196, 182, 0.15);
+  color: var(--color-success);
+  border: 1px solid rgba(46, 196, 182, 0.4);
+  text-shadow: 0 0 6px rgba(46, 196, 182, 0.6);
+}
+
+/* Favorite Star */
+.favorite__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.favorite__btn:hover {
+  color: var(--color-secondary);
+  transform: scale(1.15);
+}
+
+.favorite-star {
+  color: var(--color-secondary) !important;
+  text-shadow: 0 0 8px rgba(229, 193, 88, 0.7);
+}
+
+.favorite__btn .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  right: 0;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.favorite__btn:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sound Action Body */
+.link__sound {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0 2px;
+}
+
+.text__button {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.15;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  word-break: break-word;
+}
+
+.sound__button:hover .text__button {
+  color: var(--color-light);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.sound__button.is-playing .text__button {
+  color: #ff9d6c;
+  text-shadow: 0 0 10px rgba(230, 69, 34, 0.8);
+}
+
+.playing__indicator {
+  margin-top: 3px;
+  color: var(--color-warning);
+  font-size: 0.8rem;
+  animation: pulse-icon 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes pulse-icon {
+  from {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+  .pagination__container {
+    width: 85%;
+  }
+  .side__container {
+    width: 7.5%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .sounds__tittle {
+    font-size: 2.8em;
+  }
+  .pagination__container {
+    width: 95%;
+  }
+  .side__container {
+    width: 2.5%;
+  }
 }
 
 @media only screen and (max-width: 460px) {
-  .link__sound:before {
-
-    border-top: 2px solid var(--color-gray);
-    top: -6px;
-    left: -6px;
-    bottom: -6px;
-    right: -6px;
-    box-shadow: inset 0px 6px 25px var(--color-gray);
-}
-.sounds__tittle{
-  font-weight:  600;
-  font-size: 3.2em;
-
-}
-.fab{
-  font-size: 2em;
-}
-  .button__container{
-    width: 90%;
-    gap: 30px;
+  .button__container {
+    gap: 12px;
     padding-top: 5px;
   }
-  .sound__button{
-    width: 80px;
-    height: 80px;
+  .sound__button {
+    width: 105px;
+    min-height: 90px;
+    padding: 6px 7px;
   }
-  .side__container{
-    width: 15%;
-    background-size: contain;
-    background-position: center;
+  .text__button {
+    font-size: 0.95rem;
   }
-  .text__button{
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1410px) {
-  .side__container{
-    width: 15%;
-    background-size: contain;
-
-      background-position: center;
-
-  }
-}
-@media only screen and (max-width: 260px) {
-
-.sounds__tittle{
-  font-size: 1.5em !important;
-}
-.pagination-controls-gotito{
-  font-size: 0.05em;
-}
-}
-@media only screen and (max-width: 900px) {
-  .side__container{
-  }
-}
-@media only screen and (max-width: 570px) {
-  .gotito__fb{
-    display: none;
-  }
-  .sounds__tittle{
-    font-size: 2.5em;
+  .sounds__tittle {
+    font-size: 2.4em;
   }
 }

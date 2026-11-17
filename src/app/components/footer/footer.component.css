@@ -1,9 +1,11 @@
 .app-footer {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding: 20px 0;
+  background-color: #0a0e14;
+  border-top: 1px solid #1e2836;
+  color: var(--color-gray);
+  padding: 24px 0 20px;
   text-align: center;
-  margin-top: auto; /* Push to bottom in flex container */
+  margin-top: auto;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .footer-content {
@@ -15,33 +17,37 @@
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
+  gap: 22px;
+  margin: 16px 0;
 }
 
 .social__network {
-  display: inline-block;
-  color: var(--color-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray);
   font-size: 1.5em;
-  transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  text-decoration: none;
 }
 
 .social__network:hover {
-  transform: scale(1.2);
-  color: var(--color-secondary);
+  transform: translateY(-2px) scale(1.15);
+  color: #e5c158;
+  text-shadow: 0 0 10px rgba(229, 193, 88, 0.5), 0 0 20px rgba(229, 193, 88, 0.25);
 }
 
 .social__network:active {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Responsive */
 @media only screen and (max-width: 600px) {
   .social__network {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 
   .social-links {
-    gap: 15px;
+    gap: 16px;
   }
 }

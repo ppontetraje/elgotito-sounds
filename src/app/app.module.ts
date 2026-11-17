@@ -52,9 +52,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     NavigationComponent,
     FooterComponent
   ],
-  providers: [
-    SoundComponent
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

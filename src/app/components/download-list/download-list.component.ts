@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SoundComponent } from '../sound/sound.component';
+import { SoundService } from '../../services/sound.service';
+import { Sound } from '../../models/Sound';
 
 @Component({
   selector: 'app-download-list',
@@ -8,8 +9,8 @@ import { SoundComponent } from '../sound/sound.component';
 })
 export class DownloadListComponent implements OnInit {
 
-  soundList!:any[];
-  constructor(public _sound:SoundComponent){
+  soundList!: Sound[];
+  constructor(public _sound: SoundService){
     this.soundList = this._sound.getAllSounds();
   }
 
