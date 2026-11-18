@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <!-- Subtle Rune Grid and Connecting Traces -->
+  <defs>
+    <linearGradient id="runeEmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e04c38" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#e5c158" stop-opacity="0.06" />
+    </linearGradient>
+    <linearGradient id="runeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e5c158" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="runeTeal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2ec4b6" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#7d8c9e" stop-opacity="0.04" />
+    </linearGradient>
+  </defs>
+
+  <!-- Corner Seamless Concentric Rune Rings (Forms full circles at tile corners) -->
+  <g stroke="url(#runeGold)" stroke-width="1.2" fill="none">
+    <!-- Top-Left Corner -->
+    <path d="M 0 60 A 60 60 0 0 0 60 0" />
+    <path d="M 0 110 A 110 110 0 0 0 110 0" stroke-dasharray="6,4" />
+    <path d="M 0 160 A 160 160 0 0 0 160 0" stroke-width="0.8" opacity="0.8" />
+    <!-- Top-Right Corner -->
+    <path d="M 740 0 A 60 60 0 0 0 800 60" />
+    <path d="M 690 0 A 110 110 0 0 0 800 110" stroke-dasharray="6,4" />
+    <path d="M 640 0 A 160 160 0 0 0 800 160" stroke-width="0.8" opacity="0.8" />
+    <!-- Bottom-Right Corner -->
+    <path d="M 800 740 A 60 60 0 0 0 740 800" />
+    <path d="M 800 690 A 110 110 0 0 0 690 800" stroke-dasharray="6,4" />
+    <path d="M 800 640 A 160 160 0 0 0 640 800" stroke-width="0.8" opacity="0.8" />
+    <!-- Bottom-Left Corner -->
+    <path d="M 60 800 A 60 60 0 0 0 0 740" />
+    <path d="M 110 800 A 110 110 0 0 0 0 690" stroke-dasharray="6,4" />
+    <path d="M 160 800 A 160 160 0 0 0 0 640" stroke-width="0.8" opacity="0.8" />
+  </g>
+
+  <!-- Continuous Audio Waveforms (Seamless 800px period) -->
+  <g fill="none">
+    <!-- Upper Stream Audio Wave -->
+    <path d="M 0 190 C 100 155, 150 225, 250 190 C 350 155, 450 225, 550 190 C 650 155, 700 225, 800 190" 
+          stroke="url(#runeTeal)" stroke-width="1.4" />
+    <path d="M 0 200 C 80 180, 160 220, 240 200 C 320 180, 480 220, 560 200 C 640 180, 720 220, 800 200" 
+          stroke="#7d8c9e" stroke-opacity="0.05" stroke-width="1" stroke-dasharray="4,6" />
+
+    <!-- Lower Stream Audio Wave -->
+    <path d="M 0 610 C 100 645, 150 575, 250 610 C 350 645, 450 575, 550 610 C 650 645, 700 575, 800 610" 
+          stroke="url(#runeEmber)" stroke-width="1.4" />
+    <path d="M 0 600 C 80 620, 160 580, 240 600 C 320 620, 480 580, 560 600 C 640 620, 720 580, 800 600" 
+          stroke="#7d8c9e" stroke-opacity="0.05" stroke-width="1" stroke-dasharray="4,6" />
+  </g>
+
+  <!-- Stream Equalizer Wave Bars (Left and Right Flanks) -->
+  <g stroke="#e5c158" stroke-opacity="0.06" stroke-width="2" stroke-linecap="round">
+    <!-- Left Equalizer -->
+    <line x1="120" y1="385" x2="120" y2="415" />
+    <line x1="130" y1="375" x2="130" y2="425" />
+    <line x1="140" y1="365" x2="140" y2="435" />
+    <line x1="150" y1="355" x2="150" y2="445" />
+    <line x1="160" y1="370" x2="160" y2="430" />
+    <line x1="170" y1="380" x2="170" y2="420" />
+    <line x1="180" y1="390" x2="180" y2="410" />
+
+    <!-- Right Equalizer -->
+    <line x1="620" y1="390" x2="620" y2="410" />
+    <line x1="630" y1="380" x2="630" y2="420" />
+    <line x1="640" y1="370" x2="640" y2="430" />
+    <line x1="650" y1="355" x2="650" y2="445" />
+    <line x1="660" y1="365" x2="660" y2="435" />
+    <line x1="670" y1="375" x2="670" y2="425" />
+    <line x1="680" y1="385" x2="680" y2="415" />
+  </g>
+
+  <!-- Dota 2 Geometric Rune Lines & Traces -->
+  <g stroke="url(#runeEmber)" stroke-width="1.2" fill="none">
+    <!-- Angular circuit links -->
+    <polyline points="200,80 240,120 320,120 340,140" />
+    <polyline points="600,80 560,120 480,120 460,140" />
+    <polyline points="200,720 240,680 320,680 340,660" />
+    <polyline points="600,720 560,680 480,680 460,660" />
+
+    <polyline points="80,260 120,300 120,340" />
+    <polyline points="720,260 680,300 680,340" />
+    <polyline points="80,540 120,500 120,460" />
+    <polyline points="720,540 680,500 680,460" />
+  </g>
+
+  <!-- Small Rune Nodes -->
+  <g fill="#e5c158" fill-opacity="0.06">
+    <circle cx="240" cy="120" r="3" />
+    <circle cx="560" cy="120" r="3" />
+    <circle cx="240" cy="680" r="3" />
+    <circle cx="560" cy="680" r="3" />
+    <circle cx="120" cy="300" r="3" />
+    <circle cx="680" cy="300" r="3" />
+    <circle cx="120" cy="500" r="3" />
+    <circle cx="680" cy="500" r="3" />
+  </g>
+
+  <!-- Central Dota Rune Emblem & Aegis Silhouette -->
+  <g fill="none">
+    <!-- Diamond Frame -->
+    <polygon points="400,270 530,400 400,530 270,400" 
+             stroke="url(#runeGold)" stroke-width="1.5" />
+    <polygon points="400,290 510,400 400,510 290,400" 
+             stroke="#e04c38" stroke-opacity="0.05" stroke-width="1" stroke-dasharray="8,5" />
+
+    <!-- Center Rune Circle -->
+    <circle cx="400" cy="400" r="105" stroke="url(#runeGold)" stroke-width="1" stroke-dasharray="3,7" />
+    <circle cx="400" cy="400" r="75" stroke="#cbd5e1" stroke-opacity="0.04" stroke-width="1" />
+
+    <!-- Stylized Dota 2 Ancient Diagonal (River & Ancients) -->
+    <path d="M 335 440 L 465 360" stroke="#e04c38" stroke-opacity="0.07" stroke-width="3" stroke-linecap="round" />
+    <path d="M 345 375 L 385 355 L 365 410 Z" fill="#e5c158" fill-opacity="0.04" stroke="#e5c158" stroke-opacity="0.06" stroke-width="1" />
+    <path d="M 455 425 L 415 445 L 435 390 Z" fill="#e04c38" fill-opacity="0.04" stroke="#e04c38" stroke-opacity="0.06" stroke-width="1" />
+  </g>
+
+  <!-- Subtle Matthew & El Gotito Watermark Glyph -->
+  <g text-anchor="middle" font-family="'Bebas Neue', 'Segoe UI', sans-serif">
+    <!-- Subtitle Arch / Header -->
+    <text x="400" y="348" font-size="11" letter-spacing="5" fill="#7d8c9e" fill-opacity="0.06">DOTA 2 AUDIO STREAM</text>
+    
+    <!-- Main Gotito Title -->
+    <text x="400" y="385" font-size="28" font-weight="700" letter-spacing="7" fill="#cbd5e1" fill-opacity="0.065">EL GOTITO</text>
+    
+    <!-- Matthew Reference -->
+    <text x="400" y="415" font-size="20" font-weight="600" letter-spacing="8" fill="#e5c158" fill-opacity="0.075">MATTHEW</text>
+    
+    <!-- Rune Dots / Divider -->
+    <text x="400" y="438" font-size="10" letter-spacing="6" fill="#e04c38" fill-opacity="0.06">✦ PATCH 7.41F ✦</text>
+  </g>
+
+  <!-- Secondary subtle repeat glyphs -->
+  <g text-anchor="middle" font-family="'Bebas Neue', 'Segoe UI', sans-serif" fill="#7d8c9e" fill-opacity="0.04" font-size="12" letter-spacing="4">
+    <text x="400" y="70">MATTHEW</text>
+    <text x="400" y="750">MATTHEW</text>
+    <text x="70" y="405" transform="rotate(-90 70 405)">EL GOTITO</text>
+    <text x="730" y="405" transform="rotate(90 730 405)">EL GOTITO</text>
+  </g>
+</svg>
