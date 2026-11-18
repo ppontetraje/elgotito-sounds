@@ -1,0 +1,164 @@
+<div class="rec__container">
+  <!-- Header de la sección -->
+  <header class="rec__header">
+    <span class="rec__badge">
+      <i class="fas fa-bullhorn"></i>
+      PETICIONES DE LA COMUNIDAD
+    </span>
+    <h1 class="rec__title">SOLICITAR NUEVO AUDIO</h1>
+    <p class="rec__subtitle">
+      ¿Matthew soltó una nueva frase en su stream y aún no está en la página? 
+      Envía el clip y la comunidad votará para añadirlo en la próxima actualización.
+    </p>
+  </header>
+
+  <div class="rec__content-grid">
+    <!-- Formulario de petición -->
+    <div class="rec__form-card">
+      <h2 class="form__card-title">
+        <i class="fas fa-plus-circle"></i>
+        ENVIAR SOLICITUD
+      </h2>
+
+      <div class="alert alert-success" *ngIf="successMessage">
+        <i class="fas fa-check-circle"></i> {{ successMessage }}
+      </div>
+      <div class="alert alert-danger" *ngIf="errorMessage">
+        <i class="fas fa-exclamation-triangle"></i> {{ errorMessage }}
+      </div>
+
+      <form (ngSubmit)="submitRecommendation()">
+        <div class="form__group">
+          <label>Frase o Nombre del Audio <span class="required">*</span></label>
+          <input 
+            type="text" 
+            class="form__input" 
+            placeholder="Ej: 'Ta picantísimo papi', 'A la base mrd'..." 
+            [(ngModel)]="phrase" 
+            name="phrase"
+            required
+            maxlength="100"
+          />
+        </div>
+
+        <div class="form__group">
+          <label>Enlace del Clip o Video <span class="optional">(Opcional)</span></label>
+          <input 
+            type="url" 
+            class="form__input" 
+            placeholder="Link de Kick, Twitch, YouTube, TikTok o Facebook..." 
+            [(ngModel)]="clipUrl" 
+            name="clipUrl"
+            maxlength="250"
+          />
+        </div>
+
+        <div class="form__row">
+          <div class="form__group form__group--half">
+            <label>Minuto del Clip <span class="optional">(Opcional)</span></label>
+            <input 
+              type="text" 
+              class="form__input" 
+              placeholder="Ej: Minuto 12:45" 
+              [(ngModel)]="timestampHint" 
+              name="timestampHint"
+              maxlength="40"
+            />
+          </div>
+
+          <div class="form__group form__group--half">
+            <label>Tu Nickname <span class="optional">(Opcional)</span></label>
+            <input 
+              type="text" 
+              class="form__input" 
+              placeholder="Ej: Goto lover" 
+              [(ngModel)]="author" 
+              name="author"
+              maxlength="30"
+            />
+          </div>
+        </div>
+
+        <button 
+          type="submit" 
+          class="form__submit-btn" 
+          [disabled]="!phrase.trim() || isSubmitting"
+        >
+          <i class="fas fa-paper-plane"></i>
+          <span>{{ isSubmitting ? 'ENVIANDO...' : 'ENVIAR SOLICITUD' }}</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Muro de peticiones y votos -->
+    <div class="rec__feed-container">
+      <div class="feed__header">
+        <h2 class="feed__title">
+          <i class="fas fa-fire"></i>
+          AUDIOS MÁS PEDIDOS
+        </h2>
+        <span class="feed__count">{{ recommendations.length }} SOLICITUDES</span>
+      </div>
+
+      <div class="rec__list" *ngIf="recommendations.length > 0">
+        <div class="rec__card" *ngFor="let rec of recommendations">
+          <div class="rec__card-vote">
+            <button 
+              type="button" 
+              class="vote__btn" 
+              [class.voted]="hasVoted(rec.id)"
+              (click)="vote(rec)"
+              [title]="hasVoted(rec.id) ? 'Ya votaste por este audio' : 'Apoyar este audio (+1)'"
+            >
+              <i class="fas fa-chevron-up"></i>
+              <span class="vote__count">{{ rec.votes || 0 }}</span>
+              <span class="vote__label">VOTOS</span>
+            </button>
+          </div>
+
+          <div class="rec__card-body">
+            <div class="rec__card-top">
+              <span class="rec__card-author">
+                <i class="fas fa-user"></i> {{ rec.author || 'Dota fan' }}
+              </span>
+              <span class="rec__card-time">{{ getTimeAgo(rec.createdAt) }}</span>
+              <span 
+                class="rec__card-status" 
+                [ngClass]="{
+                  'status--pending': rec.status === 'pending',
+                  'status--added': rec.status === 'added',
+                  'status--approved': rec.status === 'approved'
+                }"
+              >
+                {{ rec.status === 'added' ? 'Añadido' : (rec.status === 'approved' ? 'En revisión' : 'Pendiente') }}
+              </span>
+            </div>
+
+            <h3 class="rec__card-phrase">"{{ rec.phrase }}"</h3>
+
+            <div class="rec__card-details">
+              <span class="rec__hint" *ngIf="rec.timestampHint">
+                <i class="fas fa-clock"></i> {{ rec.timestampHint }}
+              </span>
+
+              <a 
+                *ngIf="rec.clipUrl" 
+                [href]="rec.clipUrl" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="rec__clip-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Ver Clip / Video
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rec__empty" *ngIf="recommendations.length === 0">
+        <i class="fas fa-inbox"></i>
+        <p>Aún no hay solicitudes de audios. ¡Sé el primero en pedir uno!</p>
+      </div>
+    </div>
+  </div>
+</div>

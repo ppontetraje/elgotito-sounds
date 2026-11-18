@@ -20,7 +20,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { DownloadListComponent } from './components/download-list/download-list.component';
+import { RecommendationsComponent } from './components/recommendations/recommendations.component';
+import { DonationModalComponent } from './components/donation-modal/donation-modal.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     NavigationComponent,
     FooterComponent,
     DashboardComponent,
-    DownloadListComponent
+    DownloadListComponent,
+    RecommendationsComponent,
+    DonationModalComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+    HttpClientModule
   ],
   exports: [
     NavigationComponent,

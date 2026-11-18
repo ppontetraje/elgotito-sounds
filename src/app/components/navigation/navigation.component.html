@@ -1,6 +1,11 @@
 <div class="menu__nav">
   <div class="menu-bar">
-    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/el_gotito.mp3')" [routerLink]="['']" >El Gotito Sounds</a>
-    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/si_papa.mp3')" [routerLink]="['descargar-audios-matthew']">Descargar Audios de Matthew</a>
+    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/el_gotito.mp3')" [routerLink]="['']">El Gotito Sounds</a>
+    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/si_papa.mp3')" [routerLink]="['descargar-audios-matthew']">Descargar Audios</a>
+    <a class="nav__list" (click)="_sound.playSound('./assets/sounds/una_chiki.mp3')" [routerLink]="['pedir-audio-matthew']">Pedir Nuevo Audio</a>
+    <button type="button" class="nav__donate-btn" (click)="openDonation()" title="Apoya el proyecto con Yape">
+      <i class="fas fa-hand-holding-heart"></i>
+      <span>Apoya el Proyecto</span>
+    </button>
   </div>
 </div>

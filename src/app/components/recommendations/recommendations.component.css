@@ -1,0 +1,422 @@
+:host {
+  display: block;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.rec__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(92%, 1200px);
+  margin: 0 auto;
+  padding: 10px 10px 40px;
+}
+
+/* Header */
+.rec__header {
+  text-align: center;
+  margin-bottom: 24px;
+  max-width: 750px;
+}
+
+.rec__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 1.2px;
+  color: var(--color-secondary);
+  background: #151e2a;
+  border: 1px solid #2f4055;
+  padding: 3px 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.rec__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  color: var(--color-light);
+  margin: 4px 0 8px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.rec__subtitle {
+  color: var(--color-gray);
+  font-family: sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Grid: Form on Left, Feed on Right */
+.rec__content-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Card del Formulario */
+.rec__form-card {
+  background: #121822;
+  border: 1px solid #233040;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.form__card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--color-light);
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #212c3a;
+  padding-bottom: 10px;
+}
+
+.form__card-title i {
+  color: var(--color-secondary);
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form__group label {
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.form__group .required {
+  color: var(--color-primary);
+}
+
+.form__group .optional {
+  color: var(--color-gray);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  background: #0d121a;
+  border: 1px solid #263344;
+  border-radius: 5px;
+  padding: 0 12px;
+  color: var(--color-light);
+  font-size: 0.95rem;
+  font-family: sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form__input:focus {
+  border-color: var(--color-secondary);
+}
+
+.form__row {
+  display: flex;
+  gap: 12px;
+}
+
+.form__group--half {
+  flex: 1;
+}
+
+.form__submit-btn {
+  width: 100%;
+  height: 44px;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #1b2635;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  color: var(--color-light);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.form__submit-btn:hover:not(:disabled) {
+  background: #253448;
+  transform: translateY(-1px);
+}
+
+.form__submit-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Feed de Peticiones */
+.rec__feed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feed__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #233040;
+  padding-bottom: 10px;
+}
+
+.feed__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--color-light);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feed__title i {
+  color: var(--color-primary);
+}
+
+.feed__count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+  color: var(--color-secondary);
+  background: #141c26;
+  border: 1px solid #28374a;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.rec__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rec__card {
+  display: flex;
+  background: #121822;
+  border: 1px solid #212c3b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.rec__card:hover {
+  border-color: #35475e;
+}
+
+.rec__card-vote {
+  background: #0f141d;
+  border-right: 1px solid #1e2836;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vote__btn {
+  background: transparent;
+  border: 1px solid #29384a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-gray);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vote__btn:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  background: #18222e;
+}
+
+.vote__btn.voted {
+  border-color: #4da3db;
+  color: #4da3db;
+  background: #14212c;
+  cursor: default;
+}
+
+.vote__count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 2px 0;
+}
+
+.vote__label {
+  font-size: 0.7rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.rec__card-body {
+  padding: 12px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rec__card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rec__card-author {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  font-family: sans-serif;
+}
+
+.rec__card-author i {
+  color: var(--color-secondary);
+  margin-right: 2px;
+}
+
+.rec__card-time {
+  font-size: 0.8rem;
+  color: #5d6f85;
+  font-family: sans-serif;
+}
+
+.rec__card-status {
+  margin-left: auto;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.6px;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.status--pending {
+  background: #242017;
+  border: 1px solid #54472a;
+  color: #cca64e;
+}
+
+.status--approved {
+  background: #15222d;
+  border: 1px solid #274b62;
+  color: #4da3db;
+}
+
+.status--added {
+  background: #15241e;
+  border: 1px solid #25604b;
+  color: #48c792;
+}
+
+.rec__card-phrase {
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  color: var(--color-light);
+  margin: 2px 0 6px;
+  font-weight: 600;
+}
+
+.rec__card-details {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.rec__hint {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rec__clip-link {
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  font-family: sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s ease;
+}
+
+.rec__clip-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.rec__empty {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--color-gray);
+  font-family: sans-serif;
+}
+
+.rec__empty i {
+  font-size: 2.2rem;
+  color: #273648;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Alertas */
+.alert {
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-success {
+  background: #15241e;
+  border: 1px solid #25604b;
+  color: #48c792;
+}
+
+.alert-danger {
+  background: #241818;
+  border: 1px solid #592924;
+  color: #df5446;
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+  .rec__content-grid {
+    grid-template-columns: 1fr;
+  }
+}

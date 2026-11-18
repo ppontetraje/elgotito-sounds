@@ -1,0 +1,121 @@
+<!-- Botón Flotante Permanente (Visible en todos los módulos) -->
+<button
+  type="button"
+  class="floating__donate-btn"
+  (click)="open()"
+  title="Apoya el proyecto El Gotito Sounds con Yape"
+  aria-label="Apoya el proyecto con Yape"
+>
+  <span class="floating__icon-wrap">
+    <i class="fas fa-hand-holding-heart"></i>
+  </span>
+  <span class="floating__label">APOYAR PROYECTO</span>
+</button>
+
+<!-- Ventana Emergente / Modal de Donación -->
+<div
+  class="modal__overlay"
+  *ngIf="donationService.isOpen$ | async"
+  (click)="close()"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="donationModalTitle"
+>
+  <div class="modal__dialog" (click)="$event.stopPropagation()">
+    <!-- Cabecera del Modal -->
+    <div class="modal__header">
+      <div class="modal__title-group">
+        <div class="modal__icon-badge">
+          <i class="fas fa-hand-holding-heart"></i>
+        </div>
+        <div>
+          <h2 id="donationModalTitle" class="modal__title">APOYA EL PROYECTO</h2>
+          <span class="modal__subtitle">Iniciativa comunitaria para fans de Matthew y Dota 2</span>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="modal__close-btn"
+        (click)="close()"
+        title="Cerrar ventana (Esc)"
+        aria-label="Cerrar"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Contenido del Modal -->
+    <div class="modal__body">
+      <p class="modal__intro">
+        ¿Te vacilan los audios de <strong>Matthew</strong>? Esta plataforma fue creada por pura diversión para la comunidad dotera.
+      </p>
+
+      <p class="modal__intro">
+        Con el apoyo voluntario esperamos crear nuevas funciones interactivas en la página.
+      </p>
+
+      <!-- Tarjeta QR Yape -->
+      <div class="yape__card">
+        <div class="yape__badge">
+          <span class="yape__logo-text">YAPE</span>
+          <span class="yape__sub">APORTE VOLUNTARIO</span>
+        </div>
+
+        <div class="qr__frame">
+          <img
+            [src]="qrImagePath"
+            (error)="onImageError()"
+            alt="Código QR de Yape para donar"
+            class="qr__image"
+            *ngIf="!imageError"
+          />
+
+          <div class="qr__fallback" *ngIf="imageError">
+            <i class="fas fa-qrcode"></i>
+            <span class="fallback__title">QR DE YAPE</span>
+            <p class="fallback__text">Sube tu imagen a <code>src/assets/images/yape_jp.png</code></p>
+          </div>
+        </div>
+
+        <div class="yape__steps">
+          <div class="step__item">
+            <span class="step__num">1</span>
+            <span class="step__desc">Abre tu app de <strong>Yape</strong></span>
+          </div>
+          <div class="step__item">
+            <span class="step__num">2</span>
+            <span class="step__desc">Selecciona <strong>Escanear QR</strong></span>
+          </div>
+          <div class="step__item">
+            <span class="step__num">3</span>
+            <span class="step__desc">Apunta la cámara y dona el monto que desees</span>
+          </div>
+        </div>
+
+        <!-- Botón de meme / frase de Matthew -->
+        <button
+          type="button"
+          class="goto__audio-trigger"
+          (click)="playGotoAudio()"
+          title="Reproducir frase de Matthew"
+        >
+          <i class="fas fa-volume-up"></i>
+          <span>"¡Ven colabora, causa!"</span>
+        </button>
+      </div>
+
+      <div class="modal__note">
+        <i class="fas fa-info-circle"></i>
+        <span>Cualquier aporte, desde S/. 1.00, ayuda muchísimo. ¡Gracias por el apoyo!</span>
+      </div>
+    </div>
+
+    <!-- Pie del Modal -->
+    <div class="modal__footer">
+      <button type="button" class="modal__confirm-btn" (click)="close()">
+        <i class="fas fa-check"></i>
+        <span>ENTENDIDO, ¡GRACIAS!</span>
+      </button>
+    </div>
+  </div>
+</div>

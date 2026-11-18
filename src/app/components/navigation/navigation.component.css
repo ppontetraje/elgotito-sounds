@@ -35,7 +35,7 @@
   letter-spacing: 0.8px;
   outline: none;
   border-radius: 6px;
-  transition: color 0.25s ease, text-shadow 0.25s ease, background-color 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .menu-bar a::after {
@@ -53,8 +53,7 @@
 
 .menu-bar a:hover {
   color: #e5c158;
-  text-shadow: 0 0 10px rgba(229, 193, 88, 0.5), 0 0 20px rgba(224, 76, 56, 0.3);
-  background-color: rgba(229, 193, 88, 0.06);
+  background-color: rgba(229, 193, 88, 0.08);
 }
 
 .menu-bar a:hover::after {
@@ -66,11 +65,56 @@
   transform: translateY(1px);
 }
 
+.nav__donate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #17212d;
+  border: 1px solid #742284;
+  border-left: 2px solid #e5c158;
+  border-radius: 6px;
+  color: #f1f5f9;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  outline: none;
+  transform: skewX(-6deg);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav__donate-btn span,
+.nav__donate-btn i {
+  transform: skewX(6deg);
+}
+
+.nav__donate-btn i {
+  color: #e5c158;
+}
+
+.nav__donate-btn:hover {
+  background: #233144;
+  border-color: #8e2ba3;
+  transform: skewX(-6deg) translateY(-1px);
+}
+
+.nav__donate-btn:active {
+  transform: skewX(-6deg) translateY(1px);
+}
+
 @media only screen and (max-width: 750px) {
   .menu-bar a {
     padding: 8px 12px;
     margin: 0 2px;
     font-size: 1.05rem;
+  }
+
+  .nav__donate-btn {
+    padding: 6px 12px;
+    font-size: 1rem;
+    margin: 0 2px;
   }
 }
 
@@ -84,5 +128,11 @@
   .menu-bar a {
     font-size: 0.95rem;
     padding: 6px 10px;
+  }
+
+  .nav__donate-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    margin-top: 4px;
   }
 }

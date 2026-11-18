@@ -1,0 +1,432 @@
+/* ========================================================
+   BOTÓN FLOTANTE PERMANENTE (Visible en todos los módulos)
+   ======================================================== */
+.floating__donate-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 990;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: #131a24;
+  border: 1px solid #742284; /* Acento morado Yape mate */
+  border-left: 3px solid #e5c158; /* Acento dorado Dota 2 */
+  border-radius: 6px;
+  color: #f1f5f9;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transform: skewX(-6deg);
+}
+
+.floating__donate-btn:hover {
+  background: #1c2635;
+  border-color: #8e2ba3;
+  transform: skewX(-6deg) translateY(-2px);
+}
+
+.floating__donate-btn:active {
+  transform: skewX(-6deg) translateY(0);
+}
+
+.floating__icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5c158;
+  font-size: 1.2rem;
+  transform: skewX(6deg); /* Des-inclinar icono */
+}
+
+.floating__label {
+  display: inline-block;
+  transform: skewX(6deg); /* Des-inclinar texto */
+}
+
+/* ========================================================
+   OVERLAY / BACKDROP DEL MODAL
+   ======================================================== */
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(8, 12, 18, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========================================================
+   DIALOGO / TARJETA DEL MODAL
+   ======================================================== */
+.modal__dialog {
+  background: #111823;
+  border: 1px solid #28374a;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Cabecera */
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: #0d131d;
+  border-bottom: 1px solid #1e293b;
+}
+
+.modal__title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.modal__icon-badge {
+  width: 42px;
+  height: 42px;
+  background: #182230;
+  border: 1px solid #742284;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5c158;
+  font-size: 1.35rem;
+  transform: skewX(-8deg);
+}
+
+.modal__icon-badge i {
+  transform: skewX(8deg);
+}
+
+.modal__title {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  color: #f1f5f9;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.modal__subtitle {
+  display: block;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.modal__close-btn {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.modal__close-btn:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+}
+
+/* Cuerpo */
+.modal__body {
+  padding: 20px 22px;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.modal__intro {
+  margin: 0 0 16px 0;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+}
+
+.modal__intro strong {
+  color: #e5c158;
+}
+
+/* Tarjeta Yape */
+.yape__card {
+  background: #0a0e14;
+  border: 1px solid #742284;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.yape__badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  background: #742284;
+  padding: 4px 14px;
+  border-radius: 4px;
+  transform: skewX(-8deg);
+}
+
+.yape__logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transform: skewX(8deg);
+}
+
+.yape__sub {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #00d2c4;
+  letter-spacing: 0.5px;
+  transform: skewX(8deg);
+}
+
+/* Marco QR */
+.qr__frame {
+  width: 230px;
+  height: 230px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.qr__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.qr__fallback {
+  color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.qr__fallback i {
+  font-size: 3.5rem;
+  color: #742284;
+}
+
+.fallback__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+.fallback__text {
+  font-size: 0.75rem;
+  color: #475569;
+  margin: 0;
+}
+
+.fallback__text code {
+  background: #e2e8f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Pasos */
+.yape__steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.step__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #121923;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border-left: 2px solid #742284;
+}
+
+.step__num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.05rem;
+  color: #e5c158;
+  width: 18px;
+}
+
+.step__desc {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.step__desc strong {
+  color: #00d2c4;
+}
+
+/* Disparador de meme Goto */
+.goto__audio-trigger {
+  background: #182230;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e5c158;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.goto__audio-trigger:hover {
+  background: #223145;
+  border-color: #e5c158;
+}
+
+/* Nota adicional */
+.modal__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.modal__note i {
+  color: #e5c158;
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+/* Pie */
+.modal__footer {
+  padding: 14px 22px;
+  background: #0d131d;
+  border-top: 1px solid #1e293b;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__confirm-btn {
+  background: #182230;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  color: #f1f5f9;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  transform: skewX(-6deg);
+}
+
+.modal__confirm-btn span,
+.modal__confirm-btn i {
+  transform: skewX(6deg);
+}
+
+.modal__confirm-btn:hover {
+  background: #2563eb;
+  border-color: #60a5fa;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .floating__donate-btn {
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 14px;
+    font-size: 1rem;
+  }
+
+  .modal__header {
+    padding: 14px 16px;
+  }
+
+  .modal__title {
+    font-size: 1.35rem;
+  }
+
+  .modal__body {
+    padding: 16px;
+  }
+
+  .qr__frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .modal__footer {
+    padding: 12px 16px;
+  }
+}

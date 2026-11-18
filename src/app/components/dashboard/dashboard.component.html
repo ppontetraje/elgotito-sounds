@@ -8,27 +8,163 @@
       />
     </div>
     <div class="hero__info">
-      <span class="hero__badge">STREAMER & PRO PLAYER DOTA 2</span>
+      <div class="hero__badge">
+        <i class="fas fa-desktop"></i>
+        <span>STREAMER & PRO PLAYER DOTA 2</span>
+      </div>
       <h1 class="sounds__tittle">EL GOTITO SOUNDS</h1>
-      <div class="share__wp">
-        <label>Compartir: </label>
-        <a 
-          href="https://api.whatsapp.com/send?text=La página del gotito ppontetraje.github.io/elgotito-sounds/" 
-          data-action="share/whatsapp/share" 
-          target="_blank"
-          title="Compartir en WhatsApp"
-        >
-          <i class="fab fa-whatsapp"></i>
-        </a>
+      <div class="hero__meta">
+        <span class="hero__stat">
+          <i class="fas fa-volume-up"></i>
+          <span>{{ totalProduct }}+ AUDIOS</span>
+        </span>
+        <div class="share__wp">
+          <label>Compartir: </label>
+          <a 
+            href="https://api.whatsapp.com/send?text=La página del gotito ppontetraje.github.io/elgotito-sounds/" 
+            data-action="share/whatsapp/share" 
+            target="_blank"
+            title="Compartir en WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
     </div>
   </header>
+
+  <!-- DOTA 2 COMMAND BAR: Buscador y Filtros -->
+  <section class="command__bar">
+    <div class="search__wrapper">
+      <div class="search__box">
+        <i class="fas fa-search search__icon"></i>
+        <input 
+          type="text" 
+          class="search__input" 
+          placeholder="Buscar audios de Matthew... (ej: 'chiki', 'cancha', 'ilusion')" 
+          [(ngModel)]="searchTerm" 
+          (ngModelChange)="onSearchChange()"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button 
+          *ngIf="searchTerm" 
+          class="search__clear" 
+          (click)="clearSearch()" 
+          title="Limpiar búsqueda"
+          type="button"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="search__meta">
+        <span class="results__count">
+          <i class="fas fa-layer-group"></i>
+          Mostrando <strong>{{ soundList.length }}</strong> de {{ totalProduct }} audios
+        </span>
+      </div>
+    </div>
+
+    <!-- Filtros de categoría -->
+    <div class="filter__chips">
+      <button 
+        type="button" 
+        class="filter__chip" 
+        [class.active]="activeFilter === 'all'" 
+        (click)="setFilter('all')"
+      >
+        <span class="chip__content">
+          <i class="fas fa-th-large"></i> Todos
+          <span class="chip__counter">{{ allSounds.length }}</span>
+        </span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter__chip filter__chip--fav" 
+        [class.active]="activeFilter === 'fav'" 
+        (click)="setFilter('fav')"
+      >
+        <span class="chip__content">
+          <i class="fas fa-star"></i> Favoritos
+          <span class="chip__counter">{{ favoriteCount }}</span>
+        </span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter__chip filter__chip--hot" 
+        [class.active]="activeFilter === 'hot'" 
+        (click)="setFilter('hot')"
+      >
+        <span class="chip__content">
+          <i class="fas fa-fire"></i> Hot
+          <span class="chip__counter">{{ hotCount }}</span>
+        </span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter__chip filter__chip--new" 
+        [class.active]="activeFilter === 'new'" 
+        (click)="setFilter('new')"
+      >
+        <span class="chip__content">
+          <i class="fas fa-bolt"></i> Nuevos
+          <span class="chip__counter">{{ newCount }}</span>
+        </span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter__chip filter__chip--top" 
+        [class.active]="activeFilter === 'top'" 
+        (click)="setFilter('top')"
+      >
+        <span class="chip__content">
+          <i class="fas fa-trophy"></i> Tops / Medallas
+          <span class="chip__counter">{{ topCount }}</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Hotkeys Quick Reference Dock -->
+    <div class="hotkeys__dock">
+      <div class="hotkeys__dock-info">
+        <i class="fas fa-keyboard"></i>
+        <span class="hotkeys__dock-title">ATAJOS RÁPIDOS [1-9]:</span>
+        <span class="hotkeys__dock-text" *ngIf="favoriteCount > 0">
+          Presiona teclas <strong class="hotkey__key-chip">1</strong> al <strong class="hotkey__key-chip">{{ favoriteCount > 9 ? 9 : favoriteCount }}</strong> para reproducir tus favoritos (<strong class="hotkey__key-chip">Esc</strong> para silenciar).
+        </span>
+        <span class="hotkeys__dock-text hotkeys__dock-text--muted" *ngIf="favoriteCount === 0">
+          Marca tus frases favoritas con la estrella ⭐ para asignarles atajos numéricos [1 al 9].
+        </span>
+      </div>
+    </div>
+  </section>
 
   <div class="container__divider">
     <div class="side__container"></div>
 
     <div class="pagination__container">
-      <div class="button__container">
+      <!-- Empty State cuando no hay resultados -->
+      <div class="empty__state" *ngIf="soundList.length === 0">
+        <div class="empty__icon-wrap">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="empty__title">NO SE ENCONTRARON AUDIOS</h3>
+        <p class="empty__desc">
+          No hay sonidos que coincidan con 
+          <span *ngIf="searchTerm">"<strong>{{ searchTerm }}</strong>"</span>
+          <span *ngIf="activeFilter !== 'all'"> en el filtro seleccionado</span>.
+        </p>
+        <button type="button" class="empty__btn" (click)="clearAllFilters()">
+          <i class="fas fa-undo-alt"></i> VER TODOS LOS AUDIOS
+        </button>
+      </div>
+
+      <div class="button__container" *ngIf="soundList.length > 0">
         <div 
           class="sound__button" 
           *ngFor="let item of soundList | paginate: { itemsPerPage: itemsPerPage, currentPage: p}"
@@ -36,18 +172,38 @@
           (click)="playSound(item)"
         >
           <div class="tile__header">
-            <span 
-              *ngIf="item.tag" 
-              class="tile__badge"
-              [ngClass]="{
-                'badge--new': item.tag === 'New',
-                'badge--hot': item.tag === 'Hot',
-                'badge--top': item.tag !== 'New' && item.tag !== 'Hot'
-              }"
-            >
-              {{ item.tag }}
-            </span>
-            <span *ngIf="!item.tag" class="tile__badge--empty"></span>
+            <div class="tile__badges">
+              <span 
+                *ngIf="item.tag" 
+                class="tile__badge"
+                [ngClass]="getBadgeClass(item.tag)"
+                [title]="item.tag"
+              >
+                <i class="fas fa-fire" *ngIf="item.tag === 'Hot'"></i>
+                <i class="fas fa-bolt" *ngIf="item.tag === 'New'"></i>
+                <img 
+                  *ngIf="getMedalImage(item.tag)" 
+                  [src]="getMedalImage(item.tag)" 
+                  class="badge__medal" 
+                  [alt]="item.tag" 
+                />
+                <i 
+                  class="fas fa-crown" 
+                  *ngIf="item.tag !== 'Hot' && item.tag !== 'New' && !getMedalImage(item.tag)"
+                ></i>
+              </span>
+
+              <!-- Hotkey Badge [1..9] -->
+              <span 
+                *ngIf="getHotkey(item)" 
+                class="tile__hotkey" 
+                [title]="'Atajo rápido: Tecla [' + getHotkey(item) + ']'"
+              >
+                {{ getHotkey(item) }}
+              </span>
+
+              <span *ngIf="!item.tag && !getHotkey(item)" class="tile__badge--empty"></span>
+            </div>
 
             <span 
               class="right__tag favorite__btn" 
@@ -69,9 +225,116 @@
           </a>
         </div>     
       </div>
-      <div class="pagination__ngx__container mt-8 py-5">
+      <div class="pagination__ngx__container mt-8 py-5" *ngIf="soundList.length > itemsPerPage">
         <pagination-controls (pageChange)="p = $event" [maxSize]="3"></pagination-controls> 
       </div>
+
+      <!-- SECCIÓN DE COMENTARIOS DE LA COMUNIDAD (ESTILO POST DE FACEBOOK) -->
+      <section class="comments__section">
+        <div class="comments__header">
+          <div class="comments__header-title">
+            <i class="fas fa-comments"></i>
+            <h2>MURO DE LA COMUNIDAD</h2>
+          </div>
+          <span class="comments__count-badge">{{ comments.length }} COMENTARIOS</span>
+        </div>
+
+        <!-- Caja de publicación rápida -->
+        <div class="comment__composer">
+          <div class="composer__header">
+            <input 
+              type="text" 
+              class="composer__author-input" 
+              placeholder="Tu Nickname (opcional, ej: 'Goto Fan')" 
+              [(ngModel)]="newAuthor"
+              maxlength="30"
+            />
+            <div class="composer__emojis">
+              <span class="emojis__label">Emojis:</span>
+              <button 
+                type="button" 
+                class="emoji__btn" 
+                *ngFor="let emoji of quickEmojis" 
+                (click)="insertEmoji(emoji)"
+              >
+                {{ emoji }}
+              </button>
+            </div>
+          </div>
+
+          <textarea 
+            class="composer__textarea" 
+            placeholder="¿Qué opinas de la página? Deja tu frase, clip o comentario..." 
+            [(ngModel)]="newCommentText"
+            rows="3"
+            maxlength="400"
+          ></textarea>
+
+          <div class="composer__footer">
+            <span class="composer__char-counter">{{ (newCommentText || '').length }}/400</span>
+            <button 
+              type="button" 
+              class="composer__submit-btn" 
+              (click)="submitComment()"
+              [disabled]="!(newCommentText || '').trim() || isSubmittingComment"
+            >
+              <i class="fas fa-paper-plane"></i>
+              <span>{{ isSubmittingComment ? 'PUBLICANDO...' : 'PUBLICAR' }}</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Feed de comentarios -->
+        <div class="comments__feed">
+          <div class="comment__card" *ngFor="let comment of comments">
+            <!-- Avatar -->
+            <div class="comment__avatar">
+              <i [class]="getHeroIcon(comment.avatarHero)"></i>
+            </div>
+
+            <!-- Cuerpo del comentario -->
+            <div class="comment__body">
+              <div class="comment__meta">
+                <span class="comment__author">{{ comment.author || 'Anónimo' }}</span>
+                <span class="comment__hero-tag">{{ comment.avatarHero || 'Dota Hero' }}</span>
+                <span class="comment__time">{{ getTimeAgo(comment.createdAt) }}</span>
+              </div>
+
+              <div class="comment__text">{{ comment.text }}</div>
+
+              <!-- Reacciones: Like & Dislike -->
+              <div class="comment__actions">
+                <button 
+                  type="button" 
+                  class="action__btn action__btn--like" 
+                  [class.voted]="hasVotedComment(comment.id) === 'like'"
+                  (click)="voteComment(comment, 'like')"
+                  title="Me gusta"
+                >
+                  <i class="fas fa-thumbs-up"></i>
+                  <span>{{ comment.likes || 0 }}</span>
+                </button>
+
+                <button 
+                  type="button" 
+                  class="action__btn action__btn--dislike" 
+                  [class.voted]="hasVotedComment(comment.id) === 'dislike'"
+                  (click)="voteComment(comment, 'dislike')"
+                  title="No me gusta"
+                >
+                  <i class="fas fa-thumbs-down"></i>
+                  <span>{{ comment.dislikes || 0 }}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments__empty" *ngIf="comments.length === 0">
+            <i class="fas fa-comment-dots"></i>
+            <p>Sé el primero en dejar un comentario o pedir una frase de Matthew.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="side__container"></div>

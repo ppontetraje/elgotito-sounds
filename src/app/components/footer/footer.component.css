@@ -1,11 +1,16 @@
+:host {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+}
+
 .app-footer {
   background-color: #0a0e14;
   border-top: 1px solid #1e2836;
   color: var(--color-gray);
   padding: 24px 0 20px;
   text-align: center;
-  margin-top: auto;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 
 .footer-content {
@@ -27,14 +32,13 @@
   justify-content: center;
   color: var(--color-gray);
   font-size: 1.5em;
-  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
   text-decoration: none;
 }
 
 .social__network:hover {
   transform: translateY(-2px) scale(1.15);
   color: #e5c158;
-  text-shadow: 0 0 10px rgba(229, 193, 88, 0.5), 0 0 20px rgba(229, 193, 88, 0.25);
 }
 
 .social__network:active {
