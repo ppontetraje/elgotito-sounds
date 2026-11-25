@@ -1,39 +1,33 @@
 <div class="rec__container">
-  <!-- Header de la sección -->
-  <header class="rec__header">
-    <span class="rec__badge">
+  <!-- Cabecera -->
+  <div class="rec__header">
+    <div class="rec__badge">
       <i class="fas fa-bullhorn"></i>
-      PETICIONES DE LA COMUNIDAD
-    </span>
-    <h1 class="rec__title">SOLICITAR NUEVO AUDIO</h1>
+      <span>PETICIONES DE LA COMUNIDAD</span>
+    </div>
+    <h1 class="rec__title">¿FALTA ALGÚN AUDIO DE MATTHEW?</h1>
     <p class="rec__subtitle">
-      ¿Matthew soltó una nueva frase en su stream y aún no está en la página? 
-      Envía el clip y la comunidad votará para añadirlo en la próxima actualización.
+      Pide esa frase legendaria, clip o momento gracioso del stream que todavía no está en la web. 
+      La comunidad puede votar por las peticiones para que se agreguen más rápido.
     </p>
-  </header>
+  </div>
 
   <div class="rec__content-grid">
     <!-- Formulario de petición -->
     <div class="rec__form-card">
       <h2 class="form__card-title">
         <i class="fas fa-plus-circle"></i>
-        ENVIAR SOLICITUD
+        SOLICITAR NUEVO AUDIO
       </h2>
 
-      <div class="alert alert-success" *ngIf="successMessage">
-        <i class="fas fa-check-circle"></i> {{ successMessage }}
-      </div>
-      <div class="alert alert-danger" *ngIf="errorMessage">
-        <i class="fas fa-exclamation-triangle"></i> {{ errorMessage }}
-      </div>
-
-      <form (ngSubmit)="submitRecommendation()">
+      <form (ngSubmit)="submitRecommendation()" #recForm="ngForm">
         <div class="form__group">
-          <label>Frase o Nombre del Audio <span class="required">*</span></label>
+          <label for="phraseInput">Frase o Texto del Audio <span class="required">*</span></label>
           <input 
+            id="phraseInput"
             type="text" 
             class="form__input" 
-            placeholder="Ej: 'Ta picantísimo papi', 'A la base mrd'..." 
+            placeholder="Ej: 'No pienses en amor', 'Pega pe causa'" 
             [(ngModel)]="phrase" 
             name="phrase"
             required
@@ -42,11 +36,12 @@
         </div>
 
         <div class="form__group">
-          <label>Enlace del Clip o Video <span class="optional">(Opcional)</span></label>
+          <label for="clipUrlInput">Enlace del Stream / Video / Clip <span class="optional">(Opcional)</span></label>
           <input 
+            id="clipUrlInput"
             type="url" 
             class="form__input" 
-            placeholder="Link de Kick, Twitch, YouTube, TikTok o Facebook..." 
+            placeholder="https://youtube.com/shorts/... o Twitch / Kick" 
             [(ngModel)]="clipUrl" 
             name="clipUrl"
             maxlength="250"
@@ -55,20 +50,22 @@
 
         <div class="form__row">
           <div class="form__group form__group--half">
-            <label>Minuto del Clip <span class="optional">(Opcional)</span></label>
+            <label for="timestampInput">Minuto / Segundo <span class="optional">(Opcional)</span></label>
             <input 
+              id="timestampInput"
               type="text" 
               class="form__input" 
-              placeholder="Ej: Minuto 12:45" 
+              placeholder="Ej: Min 14:32" 
               [(ngModel)]="timestampHint" 
               name="timestampHint"
-              maxlength="40"
+              maxlength="30"
             />
           </div>
 
           <div class="form__group form__group--half">
-            <label>Tu Nickname <span class="optional">(Opcional)</span></label>
+            <label for="authorInput">Tu Nickname <span class="optional">(Opcional)</span></label>
             <input 
+              id="authorInput"
               type="text" 
               class="form__input" 
               placeholder="Ej: Goto lover" 
@@ -87,6 +84,13 @@
           <i class="fas fa-paper-plane"></i>
           <span>{{ isSubmitting ? 'ENVIANDO...' : 'ENVIAR SOLICITUD' }}</span>
         </button>
+
+        <div class="form__alert alert-success" *ngIf="successMessage">
+          <i class="fas fa-check-circle"></i> {{ successMessage }}
+        </div>
+        <div class="form__alert alert-danger" *ngIf="errorMessage">
+          <i class="fas fa-exclamation-circle"></i> {{ errorMessage }}
+        </div>
       </form>
     </div>
 

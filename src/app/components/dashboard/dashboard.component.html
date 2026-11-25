@@ -213,6 +213,7 @@
               <i class="fas fa-star favorite-star" *ngIf="item.fav === 'true'"></i>
               <span class="tooltiptext">
                 {{ item.fav === 'true' ? 'Quitar de favoritos' : 'Añadir a favoritos' }}
+                <ng-container *ngIf="getGlobalFavCount(item.id) > 0"> ({{ getGlobalFavCount(item.id) }} ⭐)</ng-container>
               </span>
             </span>
           </div>

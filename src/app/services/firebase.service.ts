@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
+import { map, catchError, switchMap } from 'rxjs/operators';
 import { firebaseConfig } from '../../environments/firebase.config';
 import { SoundComment, AudioRecommendation } from '../models/Comment';
 
@@ -136,24 +136,46 @@ export class FirebaseService {
     }
 
     return this.http.get<{ [soundId: string]: number }>(`${this.baseUrl}/favorite_counts.json`).pipe(
-      map(data => data || {}),
+      map(data => {
+        const counts = data || {};
+        localStorage.setItem('firebase_fav_counts', JSON.stringify(counts));
+        return counts;
+      }),
       catchError(() => of(this.getLocalFavoriteCounts()))
     );
   }
 
   public updateFavoriteCount(soundId: string, increment: boolean): Observable<number> {
-    const localCounts = this.getLocalFavoriteCounts();
-    const current = localCounts[soundId] || 0;
-    const nextCount = Math.max(0, current + (increment ? 1 : -1));
-    localCounts[soundId] = nextCount;
-    localStorage.setItem('firebase_fav_counts', JSON.stringify(localCounts));
-
     if (!this.baseUrl) {
+      const localCounts = this.getLocalFavoriteCounts();
+      const current = localCounts[soundId] || 0;
+      const nextCount = Math.max(0, current + (increment ? 1 : -1));
+      localCounts[soundId] = nextCount;
+      localStorage.setItem('firebase_fav_counts', JSON.stringify(localCounts));
       return of(nextCount);
     }
 
-    return this.http.put<number>(`${this.baseUrl}/favorite_counts/${soundId}.json`, nextCount).pipe(
-      catchError(() => of(nextCount))
+    // Consultar el valor actual DIRECTAMENTE en Firebase para acumular los votos reales de todos los usuarios
+    return this.http.get<number>(`${this.baseUrl}/favorite_counts/${soundId}.json`).pipe(
+      switchMap(currentRemote => {
+        const current = (typeof currentRemote === 'number' && !isNaN(currentRemote)) ? currentRemote : 0;
+        const nextCount = Math.max(0, current + (increment ? 1 : -1));
+
+        return this.http.put<number>(`${this.baseUrl}/favorite_counts/${soundId}.json`, nextCount).pipe(
+          map(() => {
+            const localCounts = this.getLocalFavoriteCounts();
+            localCounts[soundId] = nextCount;
+            localStorage.setItem('firebase_fav_counts', JSON.stringify(localCounts));
+            return nextCount;
+          })
+        );
+      }),
+      catchError(() => {
+        const localCounts = this.getLocalFavoriteCounts();
+        const current = localCounts[soundId] || 0;
+        const nextCount = Math.max(0, current + (increment ? 1 : -1));
+        return of(nextCount);
+      })
     );
   }
 
@@ -228,6 +250,43 @@ export class FirebaseService {
   public hasVotedRecommendation(recId?: string): boolean {
     if (!recId) return false;
     return !!localStorage.getItem(`voted_rec_${recId}`);
+  }
+
+  public updateRecommendationStatus(recId: string, status: 'pending' | 'approved' | 'added'): Observable<boolean> {
+    if (!recId) return of(false);
+
+    const local = this.getLocalRecommendations();
+    const item = local.find(r => r.id === recId);
+    if (item) {
+      item.status = status;
+      localStorage.setItem('firebase_recommendations', JSON.stringify(local));
+    }
+
+    if (!this.baseUrl) {
+      return of(true);
+    }
+
+    return this.http.patch(`${this.baseUrl}/recommendations/${recId}.json`, { status }).pipe(
+      map(() => true),
+      catchError(() => of(false))
+    );
+  }
+
+  public deleteRecommendation(recId: string): Observable<boolean> {
+    if (!recId) return of(false);
+
+    let local = this.getLocalRecommendations();
+    local = local.filter(r => r.id !== recId);
+    localStorage.setItem('firebase_recommendations', JSON.stringify(local));
+
+    if (!this.baseUrl) {
+      return of(true);
+    }
+
+    return this.http.delete(`${this.baseUrl}/recommendations/${recId}.json`).pipe(
+      map(() => true),
+      catchError(() => of(false))
+    );
   }
 
   // ==========================================

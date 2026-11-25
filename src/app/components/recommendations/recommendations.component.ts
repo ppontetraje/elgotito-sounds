@@ -10,7 +10,7 @@ import { AudioRecommendation } from '../../models/Comment';
 export class RecommendationsComponent implements OnInit {
   recommendations: AudioRecommendation[] = [];
   
-  // Formulario
+  // Formulario de petición
   phrase: string = '';
   clipUrl: string = '';
   timestampHint: string = '';

@@ -133,7 +133,14 @@ export class DashboardComponent implements OnInit {
     const hasVotes = soundScores.some(s => s.score > 0);
     if (!hasVotes) return;
 
-    soundScores.sort((a, b) => b.score - a.score);
+    soundScores.sort((a, b) => b.score - a.score || (Number(a.sound.id) - Number(b.sound.id)));
+
+    // Limpiar tags Top anteriores para reasignar dinámicamente según votos reales acumulados
+    this.allSounds.forEach(s => {
+      if (s.tag && s.tag.startsWith('Top')) {
+        s.tag = '';
+      }
+    });
 
     // Asignar los puestos Top 1 al 10 en vivo según votos reales
     soundScores.slice(0, 10).forEach((entry, idx) => {
@@ -141,6 +148,10 @@ export class DashboardComponent implements OnInit {
         entry.sound.tag = `Top ${idx + 1}`;
       }
     });
+  }
+
+  getGlobalFavCount(soundId: string): number {
+    return this.globalFavCounts[soundId] || 0;
   }
 
   get favoriteSounds(): Sound[] {
@@ -285,7 +296,12 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  private pendingFavUpdates = new Set<string>();
+
   toggleFavorite(sound: Sound): void {
+    if (this.pendingFavUpdates.has(sound.id)) return;
+    this.pendingFavUpdates.add(sound.id);
+
     const isAdding = sound.fav !== 'true';
     sound.fav = isAdding ? 'true' : 'false';
     localStorage.setItem(`fav_${sound.id}`, sound.fav);
@@ -293,9 +309,15 @@ export class DashboardComponent implements OnInit {
     this.applyFilter();
 
     // Sincronizar contador global en Firebase en tiempo real
-    this.firebaseService.updateFavoriteCount(sound.id, isAdding).subscribe(count => {
-      this.globalFavCounts[sound.id] = count;
-      this.updateDynamicTopRanks();
+    this.firebaseService.updateFavoriteCount(sound.id, isAdding).subscribe({
+      next: (count) => {
+        this.globalFavCounts[sound.id] = count;
+        this.updateDynamicTopRanks();
+        this.pendingFavUpdates.delete(sound.id);
+      },
+      error: () => {
+        this.pendingFavUpdates.delete(sound.id);
+      }
     });
   }
 
